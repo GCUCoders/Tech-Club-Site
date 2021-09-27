@@ -1,1 +1,1 @@
-# Web-Dev-Site-GCU-Tech-Club-
+# Web-Dev-Site-GCU-Tech-Club
