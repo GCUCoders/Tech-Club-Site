@@ -1,0 +1,27 @@
+
+#home-body{
+    background-color: #470A68;
+    font-family: Helvetica, sans-serif;}
+#home-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+    justify-content: center;
+    
+}
+.home-divs{
+    color:white;
+    display: inline-block;
+    padding:1rem;
+    background-color: #A68AC8 ;
+    border:5px black solid;
+    border-radius: .5rem;
+    margin:.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.home-buttons{
+    padding: 1rem;
+    margin: .2rem;
+}
