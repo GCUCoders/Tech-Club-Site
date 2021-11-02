@@ -34,7 +34,7 @@ Below are operational rules/guidelines that should be followed at all times when
 > After someone creates an issue, it must be resolved. Below are instructions for doing so:
 
 1. Make a commit that should resolve an active issue(remember to code in a separate branch from main as mentioned above)
-2. Create a merge request to request to add your code to the main branch(Should be base:main <- compare:<your branch>)
+2. Create a merge request to request to add your code to the main branch(Should be base:main <- compare:"<your branch>")
 3. Click "Create pull request" once, this should change the interface
 4. Assign a reviewer to the merge request. The reviewer should always be one or more of the admins: GCUCoding (preferred for Max), Max1mus7, and/or elijaholmos (for Elijah)
 5. (Optional) Assign yourself or someone else to the request as an Assignee. 
