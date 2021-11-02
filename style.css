@@ -21,18 +21,18 @@ nav li {
 
 a {
 
-//About
-nav li
+}
+.about-nav li
 {
     display:inline;
     padding:50px;
 }
-nav ul 
+.about-nav ul 
 {
     margin: 0px;
     padding: 20px 0px 20px 0px;
 }
-#bar
+#about-bar
 {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -41,13 +41,107 @@ nav ul
     font-size: large;
     margin-bottom: 10px;
 }
-a 
+.about-a 
 {
 
     text-decoration: none;
     color: white;
 }
+.about-this
+{
+    color: white;
+    margin: 15px;
+    font-family: Bookman, URW Bookman L, serif;
+    text-align: center;
+    font-size:75px ;
+}
+.about-center
+{
+    text-align: center;
+    color: white;
+}
 
+.about-div
+{
+    text-align:center;
+}
+.about-pic 
+{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.about-title
+{
+    color: white;
+    margin: 30px;
+    font-family: Bookman, URW Bookman L, serif;
+    text-align: center;
+    font-size:50px ;
+}
+
+.about-innerPicLeft
+{
+    display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 25%;
+  float: left;
+}
+
+.about-nameLeft
+{
+    color:  purple;
+    margin-top: 0px;
+    margin-left:5px;
+    font-family: Bookman, URW Bookman L, serif;
+    font-size:25px ;
+    text-align: left;
+}
+
+.about-pLeft
+{
+    color: white;
+    margin-top: 0px;
+    margin-left:5px;
+    font-family: Bookman, URW Bookman L, serif;
+    font-size:15px ;
+    text-align: left;
+}
+.about-innerPicRight
+{
+    display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 25%;
+  float: right;
+}
+.about-nameRight
+{
+    color: purple;
+    margin-top: 0px;
+    margin-left:5px;
+    font-family: Bookman, URW Bookman L, serif;
+    font-size:25px ;
+    text-align: right;
+}
+.about-pRight
+{
+    color: white;
+    margin-top: 0px;
+    margin-left:5px;
+    font-family: Bookman, URW Bookman L, serif;
+    font-size:15px ;
+    text-align: right;
+}
 
 h1 {
     text-align: center;
