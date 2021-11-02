@@ -1,62 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Committee Page</title>
-        <link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div id="projectlist">
-			<div align="center">
-				<div class="bug">
-					<div class="portal">
-						<div class="item">
-							<a href="./Elijah Olmos Resume.pdf">
-								<h1>Website Development</h1>
-							</a>
-						</div>
-					</div>
-					<div class="portal">
-						<div class="item">
-							<a href="https://www.linkedin.com/in/elijaholmos/">
-								<h1>Embedded Development</h1>
-							</a>
-						</div>
-					</div>
-					<div class="portal">
-						<div class="item">
-							<a href="http://glassintel.com/elijah/programs">
-								<h1>Cybersecurity</h1>
-							</a>
-						</div>
-					</div>
-                    <div class="portal">
-						<div class="item">
-							<a href="http://glassintel.com/elijah/programs">
-								<h1>Girls Who Code</h1>
-							</a>
-						</div>
-					</div>
-				</div>
-                <div class="bug">
-                    <div class="portal">
-						<div class="item">
-							<a href="http://glassintel.com/elijah/programs">
-								<h1>Events</h1>
-							</a>
-						</div>
-					</div>
-                    <div class="portal">
-						<div class="item">
-							<a href="http://glassintel.com/elijah/programs">
-								<h1>Resources</h1>
-							</a>
-						</div>
-					</div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committees Page - Tech Club</title>
+
+    <style>
+
+        body {
+            /* background-color: #774BAA;  */
+            background-color:#470A68; 
+        }
+        
+        footer {
+            /* height: 50px; */
+            background-color:black; 
+            color:white; 
+            text-align:center; 
+            /* justify-items: stretch; */
+            padding:10px; 
+        }
+        
+        .nav-bar {
+            display:flex;   
+            flex-wrap:wrap;
+            margin-bottom:10px;
+            justify-content: space-around;
+        }
+        
+        .nav-bar div {
+            border:1px solid #774BAA;
+            padding:10px;
+            color:white;
+        }
+        
+        .main-div {
+            background-color: #774BAA; 
+            /* background-color:#470A68;  */
+            max-width:100%; 
+            height:500px;
+            margin-bottom:10px;
+            display:flex;
+        }
+
+        .left-div {
+            width: 15%; 
+            height:100%; 
+            background-color: #522398;  
+            color:white;
+            font-size:125%; 
+            text-align:center;
+            flex-direction:column; 
+            display:flex;
+            justify-content: space-around;     
+        }
+        
+        .right-div {
+            width: 85%; 
+            height: 100%;
+            background-color: #A68AC8; 
+        }
+
+        .content-div {
+            display:flex;
+            flex-direction:column;
+        }
+
+        .content-title {
+            /* height:30px;  */
+            padding: 5px 0 5px 0; 
+            background-color: darkblue;
+            color:white;
+            width:100%; 
+            text-align:center;
+        }
+
+        .content-body {
+            /* width: 95%;  */
+            /* height: 100%;  */
+            background-color: darkcyan; 
+            color:white; 
+            text-align:center;
+            /* margin-bottom:5px;  */
+        }
+
+    </style>
+
+</head>
+
+<!-- Start of Body section -->
+<body>
+
+    <nav class="nav-bar">
+        <div>CLUB LOGO</div>
+        <div>ABOUT US</div>
+        <div>CALENDAR</div>
+        <div>COMMITTEES</div>
+        <div>PROJECTS</div>
+        <div>MERCH</div>
+        <div>CONTACT US</div>
+        <div>CART</div>
+    </nav>
+
+    <hr color="white">
+
+    <!-- Main Content Div -->
+    <div class="main-div">
+
+        <!-- Left Div -->
+        <div class="left-div">
+            <div>Website Development</div>
+            <div>Embedded Development</div>
+            <div>Cybersecurity</div>
+            <div>Girls Who Code</div>
+            <div>Hardware</div>
+        </div>
+
+        <!-- Right Div -->
+        <div class="right-div">
+
+            <div class="content-div">
+                <!-- Content Title -->
+                <div class="content-title">Committee Title</div>
+
+                <!-- Content Body -->
+                <div id="content-body" class="content-body">
+                    <script>
+                        document.getElementById('content-body').style.height = (500-29)+'px'; 
+                    </script>
+                    
                 </div>
-			</div>
-		</div>
-	</body>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>End of webpage.</footer>
+    
+</body>
+<!-- End of Body section -->
+
 </html>
