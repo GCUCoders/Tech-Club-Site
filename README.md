@@ -3,17 +3,16 @@
 This is the official repository for the GCU Technology Club Website
 
 All project planning will be taking place here on GitHub.
-- Our current admins are Max Weber (@GCUCoding/@Max1mus7) and Elijah Olmos (@elijaholmos)
+- Our current admins are Max Weber (@GCUCoding) and Elijah Olmos (@elijaholmos)
 - If you have any questions, feel free to reach out in the discord or via email
 
 Below will be some operational rules/guidelines that should be followed at all times when working on this project
 
 # Branches
 > We will be using branches to ensure that work is not overwritten. Below are some general rules for utilizing branches
-- Always code within a branch.
-- Branches should be created first by feature(navbar, design documentation, merch page, etc.)
+- **Always code within a branch.**
+- Branches should be named by feature first(navbar, design documentation, merch page, etc.)
 - If multiple people wish to work on the same feature at the same time, create a sub-branch with the branch name then your name(i.e. navbar-max, navbar-elijah)
-- Never merge a pull request without prior review
 - If an attempt to merge a pull request has been sitting for a long time without being reviewed, contact an admin.
 
 # Issues
