@@ -6,7 +6,7 @@ All project planning will be taking place here on GitHub.
 - Our current admins are Max Weber (@GCUCoding) and Elijah Olmos (@elijaholmos)
 - If you have any questions, feel free to reach out in the discord or via email
 
-Below will be some operational rules/guidelines that should be followed at all times when working on this project
+Below are operational rules/guidelines that should be followed at all times when working on this project
 
 # Branches
 > We will be using branches to ensure that work is not overwritten. Below are some general rules for utilizing branches
