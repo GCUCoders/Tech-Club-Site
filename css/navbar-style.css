@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream:css/style.css
 /* CSS needed for Gradient Background */
 body {
     margin: 0;
@@ -28,8 +27,6 @@ details
     text-align: center;
 }
 
-=======
->>>>>>> Stashed changes:css/navbar-style.css
 /* ////////START OF NAVBAR//////// */
 /* formats an unorganized list into a navigation bar that sticks to the top of the page when you scroll past it  */
 .navbar ul {
@@ -106,9 +103,6 @@ details
 .twoAcross img
 {
     max-width: 50%;
-<<<<<<< Updated upstream:css/style.css
-}
-=======
 } 
 .dropbtn {
     display: inline-block;
@@ -150,4 +144,3 @@ details
     display: block;
 }
 /* ////////END OF NAVBAR//////// */
->>>>>>> Stashed changes:css/navbar-style.css
