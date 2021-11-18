@@ -1,0 +1,133 @@
+
+#navbar {
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(190, 61, 230);
+}
+
+nav ul {
+    margin: 0;
+    padding: 8px 0px 8px 0px;
+}
+
+nav li {
+    display: inline;
+    margin: 0px 20px 10px 20px;
+}
+
+<<<<<<< Updated upstream:css/style (2).css
+a {
+
+//About
+nav li
+=======
+.about-nav li
+>>>>>>> Stashed changes:css/about-style.css
+{
+    display:inline;
+    padding:50px;
+}
+nav ul 
+{
+    margin: 0px;
+    padding: 20px 0px 20px 0px;
+}
+#bar
+{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    background-color: rgb(148, 17, 148);
+    font-size: large;
+    margin-bottom: 10px;
+}
+a 
+{
+
+    text-decoration: none;
+    color: white;
+}
+
+
+.pic 
+{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.title
+{
+    color: white;
+    margin: 30px;
+    font-family: Bookman, URW Bookman L, serif;
+    text-align: center;
+    font-size:50px ;
+}
+
+.innerPicLeft
+{
+    display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 25%;
+  float: left;
+}
+
+.nameLeft
+{
+    color:  purple;
+    margin-top: 0px;
+    margin-left:5px;
+    font-family: Bookman, URW Bookman L, serif;
+    font-size:25px ;
+    text-align: left;
+}
+
+.pLeft
+{
+    color: white;
+    margin-top: 0px;
+    margin-left:5px;
+    font-family: Bookman, URW Bookman L, serif;
+    font-size:15px ;
+    text-align: left;
+}
+.innerPicRight
+{
+    display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 25%;
+  float: right;
+}
+.nameRight
+{
+    color: purple;
+    margin-top: 0px;
+    margin-left:5px;
+    font-family: Bookman, URW Bookman L, serif;
+    font-size:25px ;
+    text-align: right;
+}
+.pRight
+{
+    color: white;
+    margin-top: 0px;
+    margin-left:5px;
+    font-family: Bookman, URW Bookman L, serif;
+    font-size:15px ;
+    text-align: right;
+}
+   
