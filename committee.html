@@ -1,62 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Committee Page</title>
-        <link rel="stylesheet" href="css/committee-style.css">
-	</head>
-	<body>
-		<div id="projectlist">
-			<div align="center">
-				<div class="bug">
-					<div class="portal">
-						<div class="item">
-							<a href="./Elijah Olmos Resume.pdf">
-								<h1>Website Development</h1>
-							</a>
-						</div>
-					</div>
-					<div class="portal">
-						<div class="item">
-							<a href="https://www.linkedin.com/in/elijaholmos/">
-								<h1>Embedded Development</h1>
-							</a>
-						</div>
-					</div>
-					<div class="portal">
-						<div class="item">
-							<a href="http://glassintel.com/elijah/programs">
-								<h1>Cybersecurity</h1>
-							</a>
-						</div>
-					</div>
-                    <div class="portal">
-						<div class="item">
-							<a href="http://glassintel.com/elijah/programs">
-								<h1>Girls Who Code</h1>
-							</a>
-						</div>
-					</div>
-				</div>
-                <div class="bug">
-                    <div class="portal">
-						<div class="item">
-							<a href="http://glassintel.com/elijah/programs">
-								<h1>Events</h1>
-							</a>
-						</div>
-					</div>
-                    <div class="portal">
-						<div class="item">
-							<a href="http://glassintel.com/elijah/programs">
-								<h1>Resources</h1>
-							</a>
-						</div>
-					</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tab Title -->
+    <title>Committees Page - Tech Club</title>
+    <!-- Link to JavaScript -->
+    <script src="js/committee.js"></script>
+    <!-- Link to Navbar CSS -->
+    <link rel="stylesheet" href="css/navbar-style.css"> 
+    <!-- Link to Committee page CSS -->
+    <link rel="stylesheet" href="css/committee-style.css">
+</head>
+
+<!-- Start of Body section -->
+<body>
+
+    <!-- Start of navbar -->
+    <div class="navbar">
+
+        <!-- GCU Tech Club Logo Image -->
+        <div style="align-items: center">
+            <img src="images/TCLBlack-bg.png" alt="GCU Tech Club Logo" class="center logo" />
+        </div>
+
+        <!-- Start of Navbar buttons -->
+        <ul>
+            <!-- Link to Home button -->
+            <li><a href="index.html">Home</a></li>
+
+            <!-- Link to About US button -->
+            <li><a href="about.html">About Us</a></li>
+
+            <!-- Link to Calendar button -->
+            <li><a href="calendar.html">Calendar</a></li>
+
+            <!-- (DO NOT DELETE)-->
+            <!-- <li class="dropdown">
+                <a href="committee_sV1.html">Committees ▼</a>
+                <div class="dropdown-content">
+                    <a href="committee.html#cyber">Cybersecurity</a>
+                    <a href="committee.html#embedded">Embedded Development</a>
+                    <a href="committee.html#girls-who-code">Girls Who Code</a>
+                    <a href="committee.html#hardware">Hardware</a>
+                    <a href="committee.html#web-dev">Website Development</a>
                 </div>
-			</div>
-		</div>
-	</body>
+            </li> -->
+            <!-- Link to Committees buttons -->
+            <li class="dropdown">
+                <a href="committee_sV1.html">Committees ▼</a>
+                <div class="dropdown-content">
+                    <a href="committee_sV1.html">Cybersecurity</a>
+                    <a href="committee_sV1.html">Embedded Development</a>
+                    <a href="committee_sV1.html">Girls Who Code</a>
+                    <a href="committee_sV1.html">Hardware</a>
+                    <a href="committee_sV1.html">Website Development</a>
+                </div>
+            </li>
+
+            <!-- Link to Projects button -->
+            <li><a href="project.html">Projects</a></li>
+
+            <!-- Link to Merch button -->
+            <li><a href="merch.html">Merch</a></li>
+
+            <!-- Link to Contact Us button -->
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <!-- End of Navbar components -->
+    </div>
+    <!-- End of navbar -->
+
+
+    <!-- Main Content Div -->
+    <div class="main-div">
+
+        <!-- Start of Left Div -->
+        <div class="left-div">
+            <!-- Show Web Development committee button -->
+            <div 
+                id="web-dev" 
+                class="selection" 
+                onclick="showWebDev();">
+                Website Development
+            </div>
+            <!-- Show Embedded Development committee button -->
+            <div 
+                id="embedded" 
+                class="selection" 
+                onclick="showEmbedded();">
+                Embedded Development
+            </div>
+            <!-- Show Cybersecurity committee button -->
+            <div 
+                id="cyber" 
+                class="selection" 
+                onclick="showCyber();">
+                Cybersecurity
+            </div>
+            <!-- Show Girls Who Code committee button -->
+            <div 
+                id="girls-who-code" 
+                class="selection" 
+                onclick="showGWC();">
+                Girls Who Code
+            </div>
+            <!-- Show Hardware committee button -->
+            <div 
+                id="hardware" 
+                class="selection" 
+                onclick="showHardware();">
+                Hardware
+            </div>
+        </div>
+        <!-- End of Left Div inside Main Content Div-->
+
+
+        <!-- (This is where committee information will appear in the main content div) -->
+        <!-- Start of Right Div -->
+        <div class="right-div">
+
+                <!-- Content Title -->
+                <div id="content-title" class="content-title">Committee Title</div>
+
+                <!-- Content Body -->
+                <div id="content-body" class="content-body">
+
+                    <!-- Set Right Div height via JS code (temporary fix) -->
+                    <script>
+                        document.getElementById('content-body').style.height = (500-39)+'px'; 
+                    </script>
+                    
+                </div>
+        </div>
+        <!-- End of Right Div inside Main Content Div -->
+
+    </div>
+    <!-- End of Main Content Div -->
+
+
+    <!-- Footer -->
+    <footer>End of webpage.</footer>
+
+    
+</body>
+<!-- End of Body section -->
+
 </html>
