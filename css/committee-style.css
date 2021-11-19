@@ -1,85 +1,113 @@
-
-
-@import url('http://fonts.googleapis.com/css?family=Raleway:300');
-@import url('http://fonts.googleapis.com/css?family=NTR');
-
-a,
-a:link,
-a:visited,
-a:active,
-a:hover {
-	text-decoration: none;
-	color: inherit;
-}
+/* CSS for entire page */ 
 body {
-	background: black;
-	height: 100%;
-	background-size: 100% 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-position: center;
-	height: 97vh;
-	width: 97%;
-	position: absolute;
-	top: 0;
-	color: rgb(252, 248, 217);
-	font-family: 'NTR', sans-serif;
-	font-size: 26px;
-}
-#wrapper {
-	text-align: center;
-	line-height: 1.4;
-}
-#projectlist {
-	padding: 100px;
-	height: fit-content;
-	width: fit-content;
-	margin: auto;
+    background-color:black; 
 }
 
-.resize {
-	width: 900px;
-	height: auto;
+/* Styling for bottom of page */
+footer {
+    background-color:black; 
+    color:white; 
+    text-align:center; 
+    padding:10px 0px 30px 0px; 
 }
 
-.resize {
-	width: 900px;
-	height: auto;
-}
-.portal .item {
-	width: 250px;
-	height: 150px;
-	padding: 13px;
-	transition: 300ms all ease-in-out;
-}
-.portal .item img {
-	width: 140px;
-}
-.portal {
-	display: inline-block;
-	transition: 300ms all ease-in-out;
-	top: 0;
+/* */
+.main-div {
+    background-color: #774BAA; 
+    max-width:100%; 
+    height:500px;
+    margin-bottom:10px;
+    display:flex;
 }
 
-.portal:hover {
-	transform: scale(0.9);
+/* */
+.left-div {
+    width: 15%; 
+    height:100%; 
+    background-color: #522398;  
+    color:white;
+    font-size:125%; 
+    text-align:center;
+    flex-direction:column; 
+    display:flex;
+    justify-content: space-around;     
 }
-.portal .item:hover {
-	background: rgba(76, 76, 76, 0.5);
-	background-color: (opacity=60);
-	filter: alpha(opacity=60);
+
+/* */
+.right-div {
+    width: 85%; 
+    height: 100%;
+    background-color: #A68AC8; 
 }
-.portal .item h1 {
-	color: rgb(252, 248, 217);
-	background: transparent;
-	text-transform: uppercase;
-	font-size: 34px;
-	text-decoration: none;
-	margin-left: -5px;
-	margin-right: -5px;
-	top: -50px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: normal;
-	transition: 200ms all ease-in-out;
+
+/* */
+.content-div {
+    display:flex;
+    flex-direction:column;
+}
+
+/* */
+.content-title {
+    /* height:30px;  */
+    padding: 5px 0 5px 0; 
+    background-color: #774BAA;
+    color:white;
+    width:100%; 
+    text-align:center;
+}
+
+/* */
+.content-body {
+    padding:5px;
+    background-color: #EAE3F1; 
+    color:black; 
+    text-align:center;
+}
+
+/* */
+.selection:hover {
+    cursor:pointer;
+}
+
+/* */
+#web-dev:hover {
+    background-color:#A68AC8;
+}
+#embedded:hover {
+    background-color:#A68AC8;
+}
+#cyber:hover {
+    background-color:#A68AC8;
+}
+#girls-who-code:hover {
+    background-color:#A68AC8;
+}
+#hardware:hover {
+    background-color:#A68AC8;
+}
+
+/* Logo image styling */
+img.logo {
+    margin-top:-20px;
+    width:20%; 
+}
+
+/* Content image styling */ 
+img.content {
+    width:22vw;
+    height:22vw;
+}
+
+/* CSS styling for screen sizes <= 1000px */
+@media (max-width: 1000px) {
+    img.logo {
+        width:25%; 
+    }
+}
+
+/* CSS styling for screen sizes <= 600px */
+@media (max-width: 600px) {
+    img.logo {
+        width:30%; 
+    }
 }
