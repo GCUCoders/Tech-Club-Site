@@ -36,7 +36,7 @@
 .home-script-buttons:hover {
   color: #a68ac8;
   border-color: #a68ac8;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 #home-project-div {
   display: grid;
