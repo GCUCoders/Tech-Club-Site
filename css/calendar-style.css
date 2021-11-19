@@ -1,0 +1,38 @@
+#navbar {
+    text-align: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 99;
+    background-color: rgb(190, 61, 230);
+}
+
+#navbar-logo {
+    width: 5%;
+}
+
+#nav-ul {
+    margin: 0;
+    padding: 8px 0px 8px 0px;
+}
+
+.nav-li {
+    display: inline;
+    margin: 1%;
+}
+
+.nav-a {
+    text-decoration: none;
+    color: white;
+}
+
+#google-calendar {
+    text-align: center;
+}
+
+.calendar-h1 {
+    padding-top: 5%;
+    text-align: center;
+    margin: 4%;
+}

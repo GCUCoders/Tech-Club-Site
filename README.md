@@ -45,3 +45,15 @@ Below are operational rules/guidelines that should be followed at all times when
 9. Click "Create pull request" to confirm the creation of the pull request
 10. On the following page, link the pull request to one or more issues by clicking on the gear icon next to "Linked issues"
 11. Once this is completed, the issue will be considered "under review". Either contact an admin for review and approval or wait until they do so on their own.
+
+# Pull Requests
+
+## Creating Pull Requests
+> Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch. Below are instructions on how to create pull requests:
+- When creating your PR (pull request), title it with a quick summary of the changes that you made
+- In the description, you should see text already populated. This is from our repo's PR template; please use it
+- Anything encpasulated in an HTML comment `<!-- -->` is treated like a comment and not displayed in the rendered description. Use these comments as guidelines for creating the PR description
+- If your PR resolves an issue, be sure to mention that in the description. It is not required for a pull request to resolve an issue, but any PR's that are not related to an issue must have a more detailed description of their changes
+- To speed up the reviewal process, it is recommended to request a review from either @GCUCoding or @elijaholmos. This is not required
+- After you create the PR, you can view the entire commit history and files changed for your branch. Any changes you make after creating the PR will also appear here
+- If your PR has not received a review after 4 business days, reach out to a committee lead in the GCU Tech Discord
