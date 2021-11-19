@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="about_us-style.css">
+    <!--nav bar-->
+</head>
+
+
+<!--SIDEBAR FOR CONTENT-->
+<body>
+    <h1 align="center"> About Us </h1>
+    <div id="main"></div>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="about_us.html">About Us</a>
+        <a href="mission.html">Our Mission</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="contact_us.html">Contact Us</a>
+      </div>
+      <div id="main">
+        <!--Opens sidebar pushes content to the side-->
+        <button class="openbtn" onclick="openNav()">☰ About</button>  
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "300px";
+        document.getElementById("main").style.marginLeft = "300px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+
+<p align="center"><img src = "/media/logo.png" width=400 height=400/></p>
+<p><font color="white"</font></p>
+<p align="center">The GCU Technology Club is the official club of College of Technology. <br>
+                  Our mission is to celebrate and promote interest and innovation in every <br>
+                  field of technology. Our goal is to cultivate an environment for like-minded <br>
+                  students to pursue their interests and share their passions by engaging with <br>
+                  others in projects, learning, and community. We work with different organizations <br>
+                  such as Black Hat, DEFCON, Girls Who Code, ISACA, Cactus Con and many more. <br>
+                  We aim to prepare students for highly successful careers in the technology industry <br>
+                  by supplying opportunities to gain industry connections and leadership experience. <br>
+                  We encourage technological innovation and work to expose our members to diverse <br>
+                  disciplines. Additionally, we strive to use our knowledge to provide excellent <br>
+                  service within our local community.We aim to prepare students for highly successful <br>
+                  careers in the technology industry by supplying opportunities to gain industry <br>
+                  connections and leadership experience. We encourage technological innovation and <br>
+                  work to expose our members to diverse disciplines. Additionally, we strive to use <br>
+                  our knowledge to provide excellent service within our local community.</p>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+@import url('http://fonts.googleapis.com/css?family=Raleway:300');
+@import url('http://fonts.googleapis.com/css?family=NTR');
+
+/* CSS needed for Gradient Background */
+.body {
+    margin: 0;
+    font-size: large;
+    background: linear-gradient(180deg,
+            hsla(0, 0%, 100%, 1) 0%,
+            hsla(279, 82%, 22%, 1) 100%);
+    background-repeat: repeat-x;
+    background-size: cover;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    min-height: 1000px;
+}
+
+.details
+{
+    background-color: #522398;
+    color: white;
+    font-size: larger;
+    
+}
+
+/* CSS needed to center an element on the page */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+/* Flexbox formatting */
+.flexContainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.row
+{
+    flex-direction: row;
+}
+
+.twoAcross img
+{
+    max-width: 50%;
+}
+
