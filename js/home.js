@@ -18,31 +18,25 @@ let cyber = "Cyber Security";
 let webdev = "Web Development";
 let embedded = "Embedded Development";
 let hardware = "Hardware";
+let girlswc = "Girls Who Code";
 
 let cyber_text = "Cyber Security is doing things.";
 let webdev_text = "Web Dev is doing things.";
 let embedded_text = "Embedded Dev is doing something.";
 let hardware_text = "Hardware is doing something.";
+let girlswc_text = "Girls Who Code is doing something.";
 // code that handles the turning of pages
 
-let page_index = 0;
+let page_index = 1;
 function forward() {
   page_index = page_index + 1;
-  if (page_index > 4) {
-    page_index = 4;
-    writeThis();
-  } else {
-    writeThis();
-  }
+
+  writeThis();
 }
 function backward() {
   page_index = page_index - 1;
-  if (page_index < 0) {
-    page_index = 0;
-    writeThis();
-  } else {
-    writeThis();
-  }
+
+  writeThis();
 }
 // actually writes the text onto the screen
 document.getElementById("home-title").innerHTML = cyber;
@@ -71,6 +65,11 @@ function writeThis() {
   if (page_index == 3) {
     document.getElementById("home-title").innerHTML = hardware;
     document.getElementById("home-text").innerHTML = hardware_text;
+    document.getElementById("home-forward-button").style.visibility = "visible";
+  }
+  if (page_index == 4) {
+    document.getElementById("home-title").innerHTML = girlswc;
+    document.getElementById("home-text").innerHTML = girlswc_text;
     document.getElementById("home-forward-button").style.visibility = "hidden";
   }
 }
