@@ -22,21 +22,21 @@
         }
 
         .left-div div {
-            border-bottom: 1px solid white;
-            border-top: 1px solid white;
+            /* border-bottom: 1px solid white; */
+            /* border-top: 1px solid white; */
             padding:20px 0px;
         } 
 
         @media (max-width:750px) {
             .left-div .selection {
-                font-size:14px;
-                border-bottom:1px solid white;
+                font-size:small;
+                /* border-bottom:1px solid white; */
             }
             .left-div {
                 width:25%;
-                /* padding:0px 5px; */
             }
         }
+        
     </style>
 </head>
 
@@ -101,7 +101,7 @@
 
 
     <!-- Main Content Div -->
-    <div class="main-div">
+    <div class="main-div" align="center">
 
         <!-- Start of Left Div -->
         <div class="left-div">
@@ -140,13 +140,15 @@
                 onclick="showHardware();">
                 Hardware
             </div>
+            
         </div>
         <!-- End of Left Div inside Main Content Div-->
 
 
         <!-- (This is where committee information will appear in the main content div) -->
         <!-- Start of Right Div -->
-        <div class="right-div">
+        <div class="right-div"
+            style="overflow-y: scroll;">
 
             <!-- Content Title -->
             <div id="content-title" class="content-title">Committee Title</div>
@@ -154,9 +156,13 @@
             <!-- Content Body -->
             <div id="content-body" class="content-body">
 
+                <p style="font-size:x-large; color:#522398">
+                    Welcome to the Committees Page!<br><br>
+                    (Page Author: @shazebs)
+                </p>
                 <!-- Set Right Div height via JS code (temporary fix) -->
                 <script>
-                    document.getElementById('content-body').style.height = (500-39)+'px'; 
+                    document.getElementById('content-body').style.height = '550px'; 
                 </script>
 
             </div>
@@ -168,39 +174,38 @@
 
 
     <!-- This container will be inserted into main content area -->
-    <div>
+    <div style="display:none;">
         <br>
         <p style="color:white;"
             id="info-webdevelopment">
-            <big>Web development</big> committee<br><br>
+            <!-- <big>Web development</big> committee<br><br> -->
             Web development teaches everyone at all levels to code on website. We design the coding to create our own website. In web design, you can learn about software development, computer science, learning the basics of coding. 
         </p>
         <p style="color:white;"
             id="info-embeddeddevelopment">
-            <big>Embedded Development</big> committee<br><br>
+            <!-- <big>Embedded Development</big> committee<br><br> -->
             This committee deals with the small devices, getting hands on with hardware hacking, physical projects, and more! Raspberry Pi’s, Arduinos, Soldering Irons, and plenty of programming is seen each time a new project is made! Whether you have been making your own embedded projects for years, or you are new to programming and electronics and want to learn, there is a spot for you here. The only requirement is you want to get hands on with tiny devices and make something new! 
         </p>
         <p style="color:white;"
             id="info-hardware">
-            <big>Hardware</big> committee<br><br>
+            <!-- <big>Hardware</big> committee<br><br> -->
             This committee is where the large devices live, and all the sys-admins hang out and work on desktop computers to server racks! Hardware and Software Virtualization, RAM and Hard Drives are staples of this club, and if you want to get into the weeds with Linux, Containers, Network Switches and more, then join us, whether you are an expert or beginner. 
         </p>
         <p style="color:white;"
             id="info-cybersecurity">
-            <big>Cybersecurity</big> committee<br><br>
+            <!-- <big>Cybersecurity</big> committee<br><br> -->
             In the cyber security committee, we do both offensive and defensive security. We will do live demonstrations of different hacking tools. Additionally, we will show students how to hack into things like web servers and personal computers. On top of that we host various competitions and events to help give students relevant experience as well as an opportunity to win prizes. 
         </p>
         <p style="color:white;"
             id="info-girlswhocode">
-            <big>Girls Who Code</big> committee<br><br>
+            <!-- <big>Girls Who Code</big> committee<br><br> -->
             (Speak to committee lead to fill in this section) 
         </p>
     </div>
 
     <!-- Footer -->
     <br>
-    <hr>
-    <footer>End of webpage.</footer>
+    <footer>Grand Canyon University 2021 | All Rights Reserved.</footer>
     
 </body>
 <!-- End of Body section -->
