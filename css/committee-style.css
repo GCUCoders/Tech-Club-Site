@@ -94,14 +94,20 @@ img.logo {
 
 /* Content image styling */ 
 img.content {
-    width:22vw;
-    height:22vw;
+    width:40%;
+    max-height:400px;
+    /* width:22vw; */
+    /* height:22vw; */
 }
 
 /* CSS styling for screen sizes <= 1000px */
 @media (max-width: 1000px) {
     img.logo {
-        width:25%; 
+        width:35%; 
+    }
+    img.content {
+        width:75%;
+        min-height:300px;
     }
 }
 
@@ -109,5 +115,10 @@ img.content {
 @media (max-width: 600px) {
     img.logo {
         width:30%; 
+        min-height:200px;
+    }
+    img.content {
+        width:100%;
+        height:auto;
     }
 }
