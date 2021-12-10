@@ -1,13 +1,17 @@
 /* CSS needed for blue Background */
+
+/*blue box */
 #body1 {
     margin: 0;
     font-size: large;
-    background: rgb(45, 115, 243);
+    background: rgb(45, 243, 78);
     background-repeat: repeat-x;
     background-size: 60%;
     font-family: Georgia, "Times New Roman", Times, serif;
     min-height: 1000px;
 }
+
+/*blue box */
 #rcorners1 {
 
     border-radius: 20px 20px 20px 20px;
@@ -40,7 +44,7 @@
 
 
   /*slideshow*/
-
+  #unused
   {box-sizing: border-box;}
   body {font-family: Verdana, sans-serif;}
   .mySlides {display: none;}
@@ -114,8 +118,22 @@
 
 
   img{
-    max-width: 100%;
-    max-height: 100%;
+    width: 40vw;
+    height: 24.75vw;
+    border-radius: 8px;
+    -moz-box-shadow: inset 10px 10px 50px black;
+  -webkit-box-shadow: inset 10px 10px 50px black;
+  box-shadow: inset 10px 10px 50px black;
+  
+    /* box-shadow: inset 10px 10px 5px black; */
+ 
+    
+  margin-left:auto;
+  margin-right: auto;
+
+
+    /* max-width: 100%;
+    max-height: 100%; */
     display: block;
   }
 
