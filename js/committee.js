@@ -92,7 +92,7 @@ function showGWC(){
     title.innerText = 'Girls Who Code Committee'; 
 
     // Create some markup to page. 
-    let codeline = '<img class="content" ><br><br><div>' + 
+    let codeline = '<img class="content"><br><br><div>' + 
     $("#info-girlswhocode").text() + '</div><br>'; 
 
     // Write markup to the document. 
