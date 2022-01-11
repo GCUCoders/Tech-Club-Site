@@ -92,7 +92,7 @@ function showGWC(){
     title.innerText = 'Girls Who Code Committee'; 
 
     // Create some markup to page. 
-    let codeline = '<img class="content" src="https://cdn.myanimelist.net/r/560x300/s/common/uploaded_files/1472794821-841ff512db1def20fba45c98328bc924.jpeg?s=d5e3294311d6f81d4731142b3681302f"><br><br><div>' + 
+    let codeline = '<img class="content" ><br><br><div>' + 
     $("#info-girlswhocode").text() + '</div><br>'; 
 
     // Write markup to the document. 
