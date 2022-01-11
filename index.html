@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GCU Technology Club</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/home-styles.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="body" id="home-body" onload="typeWriter(); backward()">
+     
+        <nav class="navbar">
+           <a href="index.html"><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo"></a> 
+            <a href="#" class="toggle-button" style="margin-top: 20px;">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li class="dropdown">
+                    <a href="committee.html">Committees</a>
+                
+                </li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="merch.html">Merch</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        <h1 id="home-welcome"style="text-align: center; color: white;"></h1>
+        <div id="home-wrapper">
+
+        <div class="home-divs">
+            "Technology is best when it brings people together."<br>- M. Mullenweg</b>
+        </div>
+        <div class="home-divs">
+            <b>Coming Up:</b><br>
+            Meeting on Thursday 5:00PM<br>
+            Building 57 Room 204<br><br>
+            <a target ="_blank"href="https://discord.gg/6tWzRjeNDR"><img style="width: 4rem; border-radius: 1rem;"src="images/discord-logo.jpg" alt="discord button"></a>
+            <a target ="_blank"href="https://www.instagram.com/gcu_tech/"><img style="width: 4rem; border-radius: 1rem;"src="images/insta.jpg" alt="instagram button"></a>
+            <a target ="_blank"href="merch.html"><img style="width: 4rem; border-radius: 1rem;"src="images/cart.jpg" alt="shop button"></a>    
+        </div>
+        <div id="home-project-div" >
+            <div>
+            <h3 id="home-title"></h3>
+            <p id="home-text"></p>
+            </div>
+            <div>
+            <img id="home-announcement-pic"src="images/hardware-stock.jpg" alt="example picture">
+            <button class="home-script-buttons"
+            id="home-backward-button" onclick="backward()">Previous</button>
+            <button class="home-script-buttons"
+             id="home-forward-button" onclick="forward()">Forward</button>
+            
+
+            </div>
+        </div>
+
+      </div>
+      <script src="js/script.js"></script>
+        <script src="js/home.js" async defer></script>
+    </body>
+</html>
