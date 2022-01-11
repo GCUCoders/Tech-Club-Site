@@ -1,6 +1,5 @@
 let tw_index = 0;
-let homepage_txt =
-  "Welcome to the GCU Technology Club's Official Web Site!"; /* The text */
+let homepage_txt = "Welcome to the Tech Club!"; /* The text */
 let speed = 60; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
