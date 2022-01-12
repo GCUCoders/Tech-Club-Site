@@ -1,0 +1,39 @@
+# A .YAML file is used to export DNS records to a
+# domain managed by Google Cloud. The format is
+# exclusive to Google Cloud DNS.
+
+---
+kind: dns#resourceRecordSet
+name: 'gcutech.org.'
+rrdatas:
+- '13.56.6.58'
+ttl: 3600
+type: A
+---
+kind: dns#resourceRecordSet
+name: 'attendance.gcutech.org.'
+rrdatas:
+- 'ghs.googlehosted.com.'
+ttl: 3600
+type: CNAME
+---
+kind: dns#resourceRecordSet
+name: 'badges.gcutech.org.'
+rrdatas:
+- 'ghs.googlehosted.com.'
+ttl: 3600
+type: CNAME
+---
+kind: dns#resourceRecordSet
+name: 'calendar.gcutech.org.'
+rrdatas:
+- 'ghs.googlehosted.com.'
+ttl: 3600
+type: CNAME
+---
+kind: dns#resourceRecordSet
+name: 'join.gcutech.org.'
+rrdatas:
+- 'ghs.googlehosted.com.'
+ttl: 3600
+type: CNAME
