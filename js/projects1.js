@@ -1,3 +1,12 @@
+const committees = [
+  'web-dev',
+  'embedded',
+  'cyber',
+  'girls-who-code',
+  'hardware',
+];
+
+
 
 let slideIndex = 0;
 showSlides();
@@ -66,4 +75,3 @@ document.addEventListener('mousemove',(e)=>{
   }
   body.insertAdjacentElement('beforeend', elem);
 })
-
