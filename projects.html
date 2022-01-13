@@ -1,123 +1,134 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>GCU Tech Club Projects</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/projects-style.css">
-        <link rel="stylesheet" href="css/navbar-style.css">
 
-    </head>
-    <body  class="body">
-      <header>
-        <nav class="navbar">
-            <a href="index.html"><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo" style="width: 80px; margin-left: 10px;"></a> 
-             <a href="#" class="toggle-button" style="margin-top: 20px;">
-               <span class="bar"></span>
-               <span class="bar"></span>
-               <span class="bar"></span>
-             </a>
-             <div class="navbar-links">
-               <ul>
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="about.html">About Us</a></li>
-                 <li><a href="calendar.html">Calendar</a></li>
-                 <li class="dropdown">
-                     <a href="committee.html">Committees</a>
-                 
-                 </li>
-                 <li><a href="projects.html">Projects</a></li>
-                 <li><a href="merch.html">Merch</a></li>
-                 <li><a href="contact.html">Contact Us</a></li>
-               </ul>
-             </div>
-           </nav>
-    </header>
-      <!--My code will go here-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GCU TechClub Projects</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/navbar-style.css">
+    <link rel="stylesheet" href="css/projects-style.css">
 
-     <div id="rcorners1">
+</head>
+
+<body class="body">
+
+    <nav class="navbar">
+        <a href="index.html"><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo"></a>
+        <a href="#" class="toggle-button" style="margin-top: 20px;">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li class="dropdown">
+                    <a href="committee.html">Committees</a>
+
+                </li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="merch.html">Merch</a></li>
+                <li style="margin-right: 10px;"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+    <!--My code will go here-->
+
+    <div id="rcorners1">
         <div id="rcorners2">
 
-<div class="slideshow-container">  <!--style="left: 80%;"--> 
+            <div class="slideshow-container">
+                <!--style="left: 80%;"-->
 
-<div class="mySlides fade" > <!--style="max-width: 100;"-->
-  <div class="numbertext">1 / 3</div>
-  <div id="outer">
-    <div id="inner">
-  <img src="images/luffy.jpg" >
-    </div>
-  </div>
+                <div class="mySlides fade">
+                    <!--style="max-width: 100;"-->
+                    <div class="numbertext">1 / 3</div>
+                    <div id="outer">
+                        <div id="inner">
+                            <img src="images/luffy.jpg">
+                        </div>
+                    </div>
 
-  <div class="text"></div>project#1
-</div>
+                    <div class="text"></div>project#1
+                </div>
 
-<div class="mySlides fade"> <!--style="max-width: 100;"-->
-  <div class="numbertext" >2 / 3</div>
-  <img src="images/luffy vs kaido.jpg">
-  <div class="text"></div>project #2
-</div>
+                <div class="mySlides fade">
+                    <!--style="max-width: 100;"-->
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/luffy vs kaido.jpg">
+                    <div class="text"></div>project #2
+                </div>
 
-<div class="mySlides fade"><!--style="max-width: 100;"-->
-  <div class="numbertext">3 / 3</div>
-  <img src="images/straw haats.jpg" >
-  <div class="text"></div>project#3
-</div>
+                <div class="mySlides fade">
+                    <!--style="max-width: 100;"-->
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/straw haats.jpg">
+                    <div class="text"></div>project#3
+                </div>
 
-</div>
-<br>
+            </div>
+            <br>
 
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
 
-<script>
-let slideIndex = 0;
-showSlides();
+            <script>
+                let slideIndex = 0;
+                showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (const slide of slides) {
-    slide.style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) slideIndex = 1;
-  for (const dot of dots) {
-    dot.classList.remove('active');
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].classList.add('active');
-  setTimeout(showSlides, 8000); // Change image every 8 seconds
-}
-</script>
-         
-       
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (const slide of slides) {
+                        slide.style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) slideIndex = 1;
+                    for (const dot of dots) {
+                        dot.classList.remove('active');
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].classList.add('active');
+                    setTimeout(showSlides, 8000); // Change image every 8 seconds
+                }
+            </script>
+
+
         </div>
-     </div>
-<br>
-<br>
-<div id="this1">
-    <div id="rcorners3">
+    </div>
+    <br>
+    <br>
+    <div id="this1">
+        <div id="rcorners3">
+        </div>
+
+        <div id="rcorners4">
+        </div>
+        <div id="rcorners5">
+        </div>
+
+        <div id="rcorners6">
+        </div>
+        <div id="rcorners7">
+        </div>
+
     </div>
 
-       <div id="rcorners4">
-       </div>
-       <div id="rcorners5">
-       </div>
-  
-          <div id="rcorners6">
-          </div>
-          <div id="rcorners7">
-       </div>
-  
-</div>
+    <script src="js/mobile-toggle.js" async defer></script>
+</body>
 
-        <script src="" async defer></script>
-    </body>
 </html>
