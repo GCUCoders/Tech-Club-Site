@@ -1,61 +1,70 @@
 #home-body {
-  font-family: Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
-#home-wrapper {
-  display: grid;
-  grid-template-rows: 2fr;
-  grid-template-columns: 1fr 1fr;
 
-  margin-top: 1rem;
-  justify-content: center;
+#home-wrapper {
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+    justify-content: center;
 }
+
+#home-welcome {
+    font-size: 2.5rem;
+    margin-bottom: -10px;
+}
+
 .home-divs {
-  color: white;
-  display: inline-block;
-  padding: 1rem;
-  background-color: #522398;
-  border: 5px black solid;
-  border-radius: 0.5rem;
-  margin: 0.5rem;
-  text-align: center;
-  font-size: 2rem;
+    color: white;
+    display: inline-block;
+    padding: 1rem;
+    background-color: #522398;
+    border: 5px black solid;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .home-buttons {
-  padding: 1rem;
-  margin: 0.2rem;
+    padding: 1rem;
+    margin: 0.2rem;
 }
-.home-script-buttons {
-  border: 4px solid #eae3f1;
-  border-radius: 1rem;
-  background-color: black;
-  color: white;
-  width: 5rem;
-  cursor: pointer;
-}
-.home-script-buttons:hover {
-  color: #a68ac8;
-  border-color: #a68ac8;
-  transition: 0.3s;
-}
-#home-project-div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 
-  justify-content: center;
-  color: white;
-  grid-column: 1/3;
-  padding: 1rem;
-  background-color: #522398;
-  border: 5px black solid;
-  border-radius: 0.5rem;
-  margin: 0.5rem;
-  text-align: center;
-  font-size: 2rem;
+.home-script-buttons {
+    border: 4px solid #eae3f1;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    width: 5rem;
+    cursor: pointer;
 }
+
+.home-script-buttons:hover {
+    color: #a68ac8;
+    border-color: #a68ac8;
+    transition: 0.3s;
+}
+
+#home-project-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    color: white;
+    grid-column: 1/3;
+    padding: 1rem;
+    background-color: #522398;
+    border: 5px black solid;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
 #home-announcement-pic {
-  width: 80%;
-  display: block;
-  margin: auto;
-  height: 18rem;
+    width: 60%;
+    display: block;
+    margin: auto;
+    height: 18rem;
 }

@@ -1,338 +1,134 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>GCU TechClub Projects</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/navbar-style.css">
-        <link rel="stylesheet" href="css/projects-style.css">
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GCU TechClub Projects</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/navbar-style.css">
+    <link rel="stylesheet" href="css/projects-style.css">
 
-    </head>
-    <body  class="body">
+</head>
 
-        <div class="navbar">
-            <div style="align-items: center">
-                <img src="images/TCLBlack-bg.png" alt="GCU Tech Club Logo" class="center"
-                    style="padding-top: 5px; width: 10%" />
-            </div>
+<body class="body">
+
+    <nav class="navbar">
+        <a href="index.html"><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo"></a>
+        <a href="#" class="toggle-button" style="margin-top: 20px;">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="calendar.html">Calendar</a></li>
                 <li class="dropdown">
-                    <a href="committee.html">Committees ▼</a>
-                    <div class="dropdown-content">
-                        <a href="committee.html#cyber">Cybersecurity</a>
-                        <a href="committee.html#embedded">Embedded Development</a>
-                        <a href="committee.html#girls-who-code">Girls Who Code</a>
-                        <a href="committee.html#hardware">Hardware</a>
-                        <a href="committee.html#web-dev">Website Development</a>
-                    </div>
+                    <a href="committee.html">Committees</a>
+
                 </li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="merch.html">Merch</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li style="margin-right: 10px;"><a href="contact.html">Contact</a></li>
             </ul>
         </div>
+    </nav>
 
 
 
 
 
-        <!--My code will go here-->
-<div id="bigbox" >
-  <div id="whitebox1" class=inner; style="font-family: 'Brush Script MT', cursive; font-size: 40px;">
-    current projects
-  </div>
-  <!-- text-align: center; -->
-  
-  <div class="rcorners1">
-    <div id="rcorners2">
+    <!--My code will go here-->
 
-<div class="slideshow-container">  <!--style="left: 80%;"--> 
+    <div id="rcorners1">
+        <div id="rcorners2">
 
-<div class="mySlides fade" > <!--style="max-width: 100;"-->
-<div class="numbertext">1 / 3</div>
-<div id="outer">
-<div id="inner">
-<img class="projects-img" src="images/luffy.jpg" >
-</div>
-</div>
+            <div class="slideshow-container">
+                <!--style="left: 80%;"-->
 
-<div class="text"></div>project#1
-</div>
+                <div class="mySlides fade">
+                    <!--style="max-width: 100;"-->
+                    <div class="numbertext">1 / 3</div>
+                    <div id="outer">
+                        <div id="inner">
+                            <img src="images/luffy.jpg">
+                        </div>
+                    </div>
 
-<div class="mySlides fade"> <!--style="max-width: 100;"-->
-<!-- second image -->
-<div class="numbertext" >2 / 3</div>
-<img class="projects-img"src="images/luffy vs kaido.jpg">
-<div class="text"></div>project #2
-</div>
+                    <div class="text"></div>project#1
+                </div>
 
-<div class="mySlides fade"><!--style="max-width: 100;"-->
-<div class="numbertext">3 / 3</div>
-<!-- third image -->
-<img class="projects-img" src="images/straw haats.jpg" >
-<div class="text"></div>project#3
-</div>
+                <div class="mySlides fade">
+                    <!--style="max-width: 100;"-->
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/luffy vs kaido.jpg">
+                    <div class="text"></div>project #2
+                </div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="mySlides fade">
+                    <!--style="max-width: 100;"-->
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/straw haats.jpg">
+                    <div class="text"></div>project#3
+                </div>
 
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-let i;
-let slides = document.getElementsByClassName("mySlides");
-let dots = document.getElementsByClassName("dot");
-for (const slide of slides) {
-slide.style.display = "none";  
-}
-slideIndex++;
-if (slideIndex > slides.length) slideIndex = 1; 
-for (i = 0; i < dots.length; i++) {
-dots[i].className = dots[i].className.replace(" active", "");
-}
-slides[slideIndex-1].style.display = "block";  
-dots[slideIndex-1].className += " active";
-setTimeout(showSlides, 8000); // Change image every 8 seconds
-}
-</script>
-
-
-
-
-<script>
-  let slideIndex = 1;
-showSlides1(slideIndex);
-
-function plusSlides(n) {
-  showSlides1(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides1(slideIndex = n);
-}
-
-function showSlides1(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
-</script>
-
-
-
-     
-   
-    </div>
- </div>
-<br>
-<br>
-
-<div id="this1">
-<div id="rcorners3">
-  
-  <div class="thecontainer">
-    <div class="wgh-slider">
-      <input class="wgh-slider-target" type="radio" id="slide-1" name="slider"/>
-      <input class="wgh-slider-target" type="radio" id="slide-2" name="slider"/>
-      <input class="wgh-slider-target" type="radio" id="slide-3" name="slider" checked="checked"/>
-      <input class="wgh-slider-target" type="radio" id="slide-4" name="slider"/>
-      <input class="wgh-slider-target" type="radio" id="slide-5" name="slider"/>
-      <div class="wgh-slider__viewport">
-        <div class="wgh-slider__viewbox">
-          <div class="wgh-slider__thecontainer">
-            <div class="wgh-slider-item">
-              <div class="wgh-slider-item__inner">
-                <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="images/tony tony chopper.jpg" alt="RYSY - Traveler LP"/>
-                  <figcaption class="wgh-slider-item-figure__caption"><a href="https://picsum.photos/id/237/480/480">Future pirate king</a><span>Tony Tony chopper</span></figcaption>
-                </figure>
-                <label class="wgh-slider-item__trigger" for="slide-1" title="Show product 1"></label>
-              </div>
             </div>
-            <div class="wgh-slider-item">
-              <div class="wgh-slider-item__inner">
-                <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="images/niko robin.jpg" alt="Best female straw hat"/>
-                  <figcaption class="wgh-slider-item-figure__caption"><a href="https://f4.bcbits.com/img/a1305025178_16.jpg">Nico Robin</a><span>Only woman i'd simp for</span></figcaption>
-                </figure>
-                <label class="wgh-slider-item__trigger" for="slide-2" title="Show product 2"></label>
-              </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </div>
-            <div class="wgh-slider-item">
-              <div class="wgh-slider-item__inner">
-                <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="images/ussop.jpg" alt="ussop"/>
-                  <figcaption class="wgh-slider-item-figure__caption"><a href="https://picsum.photos/id/237/480/480">"Not sojeking"</a><span>"you people will be guided by me"</span></figcaption>
-                </figure>
-                <label class="wgh-slider-item__trigger" for="slide-3" title="Show product 3"></label>
-              </div>
-            </div>
-            <div class="wgh-slider-item">
-              <div class="wgh-slider-item__inner">
-                <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="images/boa hancok.jpg" alt="boa hancock"/>
-                  <figcaption class="wgh-slider-item-figure__caption"><a href="http://f4.bcbits.com/img/a0071388082_16.jpg">"Oh, how scary..." </a><span>Øne Piece</span></figcaption>
-                </figure>
-                <label class="wgh-slider-item__trigger" for="slide-4" title="Show product 4"></label>
-              </div>
-            </div>
-            <div class="wgh-slider-item">
-              <div class="wgh-slider-item__inner">
-                <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="images/nami.jpg" > alt="Nami can't solo boa"/>
-                  <figcaption class="wgh-slider-item-figure__caption"><a href="https://f4.bcbits.com/img/a1305025178_16.jpg">Nami</a><span>Øne Piece</span></figcaption>
-                </figure>
-                <label class="wgh-slider-item__trigger" for="slide-5" title="Show product 5"></label>
-              </div>
-            </div>
-          </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (const slide of slides) {
+                        slide.style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) slideIndex = 1;
+                    for (const dot of dots) {
+                        dot.classList.remove('active');
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].classList.add('active');
+                    setTimeout(showSlides, 8000); // Change image every 8 seconds
+                }
+            </script>
+
+
         </div>
-      </div>
     </div>
-  </div>
-
-  
-</div>
-
-   <div id="rcorners4">
-   </div>
-   <div id="rcorners5">
-   </div>
-
-      <div id="rcorners6">
-      </div>
-      <div id="rcorners7">
-   </div>
-
-
-</div>
-
-<br>
-<br>
-
-<div id="whitebox1" class=inner; style="font-family: 'Brush Script MT', cursive; font-size: 40px;"> <!--white box-->
-<!--projects "title style"-->
-<span> Previous Projects<br></span> 
-<p></p>
-</div>
-<br>
-<div id=whiteblock1>
-</div>
-<div id=whiteblock2>
-</div>
-
-
-
-<!-- slideshow first trial  -->
-
-<!-- <div class="thecontainer">
-  <div class="wgh-slider">
-    <input class="wgh-slider-target" type="radio" id="slide-1" name="slider"/>
-    <input class="wgh-slider-target" type="radio" id="slide-2" name="slider"/>
-    <input class="wgh-slider-target" type="radio" id="slide-3" name="slider" checked="checked"/>
-    <input class="wgh-slider-target" type="radio" id="slide-4" name="slider"/>
-    <input class="wgh-slider-target" type="radio" id="slide-5" name="slider"/>
-    <div class="wgh-slider__viewport">
-      <div class="wgh-slider__viewbox">
-        <div class="wgh-slider__thecontainer">
-          <div class="wgh-slider-item">
-            <div class="wgh-slider-item__inner">
-              <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="https://picsum.photos/id/237/480/480" alt="RYSY - Traveler LP"/>
-                <figcaption class="wgh-slider-item-figure__caption"><a href="https://picsum.photos/id/237/480/480">RYSY - Traveler LP</a><span>RYSY</span></figcaption>
-              </figure>
-              <label class="wgh-slider-item__trigger" for="slide-1" title="Show product 1"></label>
-            </div>
-          </div>
-          <div class="wgh-slider-item">
-            <div class="wgh-slider-item__inner">
-              <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="https://f4.bcbits.com/img/a1305025178_16.jpg" alt="The Last Resort"/>
-                <figcaption class="wgh-slider-item-figure__caption"><a href="https://f4.bcbits.com/img/a1305025178_16.jpg">The Last Resort</a><span>Trentemøller</span></figcaption>
-              </figure>
-              <label class="wgh-slider-item__trigger" for="slide-2" title="Show product 2"></label>
-            </div>
-          </div>
-          <div class="wgh-slider-item">
-            <div class="wgh-slider-item__inner">
-              <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="https://picsum.photos/id/237/480/480" alt="The Provider"/>
-                <figcaption class="wgh-slider-item-figure__caption"><a href="https://picsum.photos/id/237/480/480">The Provider</a><span>Coldair</span></figcaption>
-              </figure>
-              <label class="wgh-slider-item__trigger" for="slide-3" title="Show product 3"></label>
-            </div>
-          </div>
-          <div class="wgh-slider-item">
-            <div class="wgh-slider-item__inner">
-              <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="http://f4.bcbits.com/img/a0071388082_16.jpg" alt="Worship Nothing"/>
-                <figcaption class="wgh-slider-item-figure__caption"><a href="http://f4.bcbits.com/img/a0071388082_16.jpg">Worship Nothing</a><span>Hatti Vatti</span></figcaption>
-              </figure>
-              <label class="wgh-slider-item__trigger" for="slide-4" title="Show product 4"></label>
-            </div>
-          </div>
-          <div class="wgh-slider-item">
-            <div class="wgh-slider-item__inner">
-              <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="https://f4.bcbits.com/img/a1305025178_16.jpg" alt="The Last Resort"/>
-                <figcaption class="wgh-slider-item-figure__caption"><a href="https://f4.bcbits.com/img/a1305025178_16.jpg">The Last Resort</a><span>Trentemøller</span></figcaption>
-              </figure>
-              <label class="wgh-slider-item__trigger" for="slide-5" title="Show product 5"></label>
-            </div>
-          </div>
+    <br>
+    <br>
+    <div id="this1">
+        <div id="rcorners3">
         </div>
-      </div>
+
+        <div id="rcorners4">
+        </div>
+        <div id="rcorners5">
+        </div>
+
+        <div id="rcorners6">
+        </div>
+        <div id="rcorners7">
+        </div>
+
     </div>
-  </div>
-</div> -->
 
+    <script src="js/mobile-toggle.js" async defer></script>
+</body>
 
-
-
-<!-- slideshow first trial  -->
-
-
-<script>
-  // mouse trail
-
-
-let body=document.body;
-
-document.addEventListener('mousemove',(e)=>{
-  let elem=document.createElement('div');
-  elem.setAttribute('class', 'trail')
-  elem.setAttribute('style', `left: ${e.clientX -10}px; top: ${e.clientY -20}px;`);
-
-  elem.onanimationend=()=>{
-    elem.remove();
-  }
-  body.insertAdjacentElement('beforeend', elem);
-})
-
-</script>
-<script type = "text/javascript" src = projects1.js > </script>
-</script>
-<script src="js/projects1.js"></script>
-        <script src="js/projects1.js" async defer></script>
-    </body>
 </html>
