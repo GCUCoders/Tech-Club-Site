@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Calendar</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/calendar-style.css">
-        <link rel="stylesheet" href="css/navbar-style.css">
-    </head>
-    <body class="body">
-        <header>
-            <nav class="navbar">
-                <a href="index.html"><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo"></a> 
-                 <a href="#" class="toggle-button" style="margin-top: 20px;">
-                   <span class="bar"></span>
-                   <span class="bar"></span>
-                   <span class="bar"></span>
-                 </a>
-                 <div class="navbar-links">
-                   <ul>
-                     <li><a href="index.html">Home</a></li>
-                     <li><a href="about.html">About Us</a></li>
-                     <li><a href="calendar.html">Calendar</a></li>
-                     <li class="dropdown">
-                         <a href="committee.html">Committees</a>
-                     
-                     </li>
-                     <li><a href="projects.html">Projects</a></li>
-                     <li><a href="merch.html">Merch</a></li>
-                     <li><a href="contact.html">Contact Us</a></li>
-                   </ul>
-                 </div>
-               </nav>
-        </header>
-        <h1 class="calendar-h1">Event Calendar</h1>
 
-        <div id="google-calendar-div">
-            <iframe id="google-calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FPhoenix&src=a2VqYmVxMW50ZG90OW0ya2dvaGhlamhubG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548&color=%230B8043" 
-                frameborder="0" scrolling="no"></iframe>
-        </div>
-        
-        <script type="text/javascript" src="js/script.js"></script>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calendar</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/calendar-style.css">
+    <link rel="stylesheet" href="css/navbar-style.css">
+</head>
+
+<body class="body">
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo"></a>
+            <a href="#" class="toggle-button" style="margin-top: 20px;">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li class="dropdown">
+                        <a href="committee.html">Committees</a>
+
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="merch.html">Merch</a></li>
+                    <li style="margin-right: 10px;"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h1 class="calendar-h1">Event Calendar</h1>
+
+    <div id="google-calendar-div">
+        <iframe id="google-calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FPhoenix&src=a2VqYmVxMW50ZG90OW0ya2dvaGhlamhubG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548&color=%230B8043"
+            frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <script src="js/mobile-toggle.js"></script>
+</body>
+
 </html>
