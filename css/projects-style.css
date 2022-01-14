@@ -117,7 +117,7 @@
 
 
 
-  img{
+  img:not(#navbar-logo){
     width: 40vw;
     height: 24.75vw;
     border-radius: 8px;
