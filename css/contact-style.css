@@ -1,4 +1,5 @@
-body {
+
+#contact-main {
   text-align: center;
   width: 100%;
   margin: auto;
@@ -6,10 +7,11 @@ body {
   max-width: 2000px;
 }
 
-img {
+#contact-discord-link {
   margin-top: 30px;
   border: 1px solid black;
 }
+
 h1 {
   padding: 5px 10px;
   text-shadow: 3px 5px 8px #a10995;
