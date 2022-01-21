@@ -2,8 +2,9 @@
     text-align: center;
 }
 
-.contact-img {
-    margin-top: 30px;
+#qrCode {
+  margin-top: 30px;
+  border: 1px solid black;
 }
 
 .contact-h1 {
