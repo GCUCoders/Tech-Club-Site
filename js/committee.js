@@ -9,8 +9,6 @@ const committees = [
 ]; 
 
 
-
-
 // Left div (tab highlighting) function. 
 function highlightSelection(turnOn) 
 {
@@ -42,7 +40,7 @@ function showWebDev()
     title.innerText = 'Web Development Committee'; 
 
     // create markup that sets an image and 
-    let codeline = '<img class="content" src="images/img1.png"><br><br><div>' + 
+    let codeline = '<img class="content" src="images/webdev_customImg.png"><br><br><div>' + 
     // cool way to query select an id on the document 
     $("#info-webdevelopment").text() + '</div><br>'; 
 
@@ -113,8 +111,8 @@ function showGWC()
     title.innerText = 'Girls Who Code Committee'; 
 
     // Create some markup to page displaying the committee image and description 
-    let codeline = '<img class="content" src="images/gwc_logo.png"><br><br><div>' + 
-    $("#info-girlswhocode").text() + '</div><br>'; 
+    let codeline = '<img class="content" src="images/gwc_logo1.png"><br><br><div>' + 
+    $("#info-girlswhocode").text() + '</div><br>Check out their website at:  <a style="color:white; font-size:bolder;" href="https://girlswhocode.com/" target="_blank">www.girlswhocode.com</a>'; 
 
     // Write markup to the document. 
     body.innerHTML = codeline; 
@@ -144,6 +142,5 @@ function showHardware()
     // highlight hardware tab 
     highlightSelection('hardware');
 }
-
 
 
