@@ -9,26 +9,6 @@
     background-color: rgb(190, 61, 230);
 }
 
-nav ul {
-    margin: 0;
-    padding: 8px 0px 8px 0px;
-}
-
-nav li {
-    display: inline;
-    margin: 0px 20px 10px 20px;
-}
-
-.about-nav li
-{
-    display:inline;
-    padding:50px;
-}
-nav ul 
-{
-    margin: 0px;
-    padding: 20px 0px 20px 0px;
-}
 #bar
 {
     text-align: center;
@@ -38,13 +18,6 @@ nav ul
     font-size: large;
     margin-bottom: 10px;
 }
-a 
-{
-
-    text-decoration: none;
-    color: white;
-}
-
 
 .pic 
 {

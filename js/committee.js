@@ -10,7 +10,6 @@ const committees = [
 	'hardware',
 ]; 
 
-
 // Left div selection highlight function. 
 function highlightSelection(turnOn) 
 {
@@ -26,7 +25,7 @@ function highlightSelection(turnOn)
 } 
 
 
-function showWebDev() {
+function showWebDev(){
 
     // Select Right Div content components. 
     const title = document.getElementById('content-title');

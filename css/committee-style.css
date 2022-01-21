@@ -30,7 +30,7 @@ footer {
     /* background-color: #522398;   */
     background-color: #774BAA;  
     color:white;
-    font-size:medium; 
+    font-size:smaller; 
     text-align:center;
     flex-direction:column; 
     display:flex;
@@ -38,7 +38,7 @@ footer {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 .left-div .selection {
-    border-bottom:2px solid #A68AC8;
+    border-bottom:1px solid white;
 }
 .left-div .side-menu {
     display:flex;
