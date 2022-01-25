@@ -1,5 +1,5 @@
 
-/* Array of all committees.  */
+/* Array of all committee document item ID's.  */
 const committees = [
 	'web-dev',
 	'embedded',
@@ -13,13 +13,14 @@ const committees = [
 function highlightSelection(turnOn) 
 {
     // which tab in the left column is currently selected
-    for(const committee of committees)
+    for (const committee of committees) 
     {
-        // turn on highlight
+        // turn on tab highlight
         if (committee == turnOn) {
             document.getElementById(turnOn).style.backgroundColor = '#A68AC8';
         }
-        else { // turn off highlight 
+        // turn off highlight
+        else {  
             document.getElementById(committee).style.backgroundColor = '#774BAA';
         }
     }
@@ -68,7 +69,7 @@ function showEmbedded()
     img.src = 'https://www.ssla.co.uk/wp-content/uploads/2020/10/embedded-software-entwickler-entwicklung-tasks.png';
 
     const desc = document.createElement('div');
-    desc.innerHTML = $("#info-embeddeddevelopment").text();
+    desc.innerHTML = $("#info-embeddeddevelopment").text() + '<br>';
 
     //body.innerHTML = '<img class="content" src="https://www.ssla.co.uk/wp-content/uploads/2020/10/embedded-software-entwickler-entwicklung-tasks.png"/><br><br><div>' + 
     //$("#info-embeddeddevelopment").text() + '</div><br>'; 
@@ -112,7 +113,7 @@ function showGWC()
 
     // Create some markup to page displaying the committee image and description 
     let codeline = '<img class="content" src="images/gwc_logo1.png"><br><br><div>' + 
-    $("#info-girlswhocode").text() + '</div><br>Check out their website at:  <a style="color:white; font-size:bolder;" href="https://girlswhocode.com/" target="_blank">www.girlswhocode.com</a>'; 
+    $("#info-girlswhocode").text() + '<br>Check out their website at:  <a style="color:white; font-size:bolder;" href="https://girlswhocode.com/" target="_blank">www.girlswhocode.com</a></div><br>'; 
 
     // Write markup to the document. 
     body.innerHTML = codeline; 
@@ -143,4 +144,7 @@ function showHardware()
     highlightSelection('hardware');
 }
 
-
+/*
+    Author: Shazeb Suhail
+    Date:   1/24/2022
+*/

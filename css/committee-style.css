@@ -8,7 +8,7 @@ footer {
     background-color:black; 
     color:white; 
     text-align:center; 
-    padding: 20px 0px 20px 0px; 
+    padding: 20px; 
 }
 
 /* main div styling */
@@ -27,7 +27,6 @@ footer {
 .left-div {
     width: 15%; 
     height:100%; 
-    /* background-color: #522398;   */
     background-color: #774BAA;  
     color:white;
     font-size:smaller; 
@@ -36,6 +35,7 @@ footer {
     display:flex;
     justify-content: space-between;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    /* background-color: #522398;   */
 }
 .left-div .selection {
     border-bottom:1px solid white;
@@ -95,23 +95,6 @@ footer {
     cursor:pointer;
 }
 
-/* */
-#web-dev:hover {
-    background-color:#A68AC8;
-}
-#embedded:hover {
-    background-color:#A68AC8;
-}
-#cyber:hover {
-    background-color:#A68AC8;
-}
-#girls-who-code:hover {
-    background-color:#A68AC8;
-}
-#hardware:hover {
-    background-color:#A68AC8;
-}
-
 /* Logo image styling */
 img.logo {
     margin-top:-20px;
@@ -127,7 +110,51 @@ img.content {
     /* height:22vw; */
 }
 
-/* CSS styling for screen sizes <= 1000px */
+p big {
+    color: gold;
+}
+
+.left-div div {
+    padding: 20px 0px;
+    /* border-bottom: 1px solid white; */
+    /* border-top: 1px solid white; */
+}
+
+
+
+/* ID's  */
+#web-dev:hover {
+    background-color:#A68AC8;
+}
+#embedded:hover {
+    background-color:#A68AC8;
+}
+#cyber:hover {
+    background-color:#A68AC8;
+}
+#girls-who-code:hover {
+    background-color:#A68AC8;
+}
+#hardware:hover {
+    background-color:#A68AC8;
+}
+#defaultContentIMG {
+    width: 25vw;
+    height:25vw;
+}
+
+
+
+/* @media tags for screen-size scaling */
+/*  <= 1300px    */
+@media (max-width: 1300px)
+{   
+    #defaultContentIMG {
+        width: 35vw;
+        height: 35vw;
+    }
+}
+/*  <= 1000px    */
 @media (max-width: 1000px) {
     img.logo {
         width:35%; 
@@ -136,9 +163,26 @@ img.content {
         width:75%;
         min-height:300px;
     }
+    #defaultContentIMG {
+        width: 40vw;
+        height: 40vw;
+    }
 }
-
-/* CSS styling for screen sizes <= 600px */
+/*  <= 750px    */
+@media (max-width:750px) {
+    .left-div .selection {
+        font-size: small;
+        /* border-bottom:1px solid white; */
+    }
+    .left-div {
+        width: 25%;
+    }
+    #defaultContentIMG {
+        width: 45vw;
+        height: 45vw;
+    }
+}
+/*  <= 600px    */
 @media (max-width: 600px) {
     img.logo {
         width:30%; 
@@ -157,12 +201,18 @@ img.content {
     .navbar ul {
         width:100%;
     }
+    #defaultContentIMG {
+        width: 50vw;
+        height: 50vw;
+    }
 }
+/*  <= 550px    */ 
 @media (max-width:550px) {
     .left-div .selection {
         font-size:smaller;
     }
 }
+/*  <= 475px    */
 @media (max-width: 475px) {
     .left-div .selection {
         font-size:smaller;
@@ -175,27 +225,9 @@ img.content {
         height:18vw;
         transform:translate(8px, 0px); 
     }
-}
-
-
-/* added 1/19/2022  */
-
-p big {
-    color: gold;
-}
-
-.left-div div {
-    /* border-bottom: 1px solid white; */
-    /* border-top: 1px solid white; */
-    padding: 20px 0px;
-}
-
-@media (max-width:750px) {
-    .left-div .selection {
-        font-size: small;
-        /* border-bottom:1px solid white; */
-    }
-    .left-div {
-        width: 25%;
+    #defaultContentIMG {
+        width: 55vw;
+        height: 55vw;
     }
 }
+
