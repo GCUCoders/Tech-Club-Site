@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GCU Technology Club</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/home-style.css">
+    <link rel="stylesheet" href="css/navbar-style.css">
+</head>
+
+<body class="body" id="home-body" onload="typeWriter(); backward()">
+
+    <nav class="navbar">
+        <a href="index.html"><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo"></a>
+        <a href="#" class="toggle-button" style="margin-top: 20px;">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li class="dropdown">
+                    <a href="committee.html">Committees</a>
+
+                </li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="merch.html">Merch</a></li>
+                <li style="margin-right: 10px;"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1 id="home-welcome" style="text-align: center; color: white;"></h1>
+    <div id="home-wrapper">
+
+        <div class="home-divs">
+            <b> <i>"Technology is best when it brings people together."</i></b><br>- M. Mullenweg</b>
+            <br><br><b>Meeting Times</b><br>Mondays 5:00 - 7:00PM<br>Thursdays 5:00 - 7:00PM<br><br><b>Location</b><br>Building 57 Room 204<br><br>
+            <a target="_blank" href="https://discord.gg/6tWzRjeNDR"><img style="width: 4rem; border-radius: 1rem;" src="images/discord-logo.jpg" alt="discord link"></a>
+            <a target="_blank" href="https://www.instagram.com/gcu_tech/"><img style="width: 4rem; border-radius: 1rem;" src="images/insta.jpg" alt="instagram link"></a>
+            <a target="_blank" href="https://github.com/GCUCoders/"><img style="width: 4rem; border-radius: 1rem;" src="images/github-logo.png" alt="github link"></a>
+            <a target="_blank" href="merch.html"><img style="width: 4rem; border-radius: 1rem;" src="images/cart.jpg" alt="shop button"></a>
+        </div>
+
+        <div id="home-project-div">
+            <div>
+                <h3 id="home-title"></h3>
+                <p id="home-text"></p>
+            </div>
+            <div>
+                <img id="home-announcement-pic" src="images/hardware-stock.jpg" alt="example picture">
+                <button class="home-script-buttons" id="home-backward-button" onclick="backward()">Previous</button>
+                <button class="home-script-buttons" id="home-forward-button" onclick="forward()">Forward</button>
+
+
+            </div>
+        </div>
+
+    </div>
+    <script src="js/mobile-toggle.js"></script>
+    <script src="js/home.js" async defer></script>
+</body>
+
+</html>
