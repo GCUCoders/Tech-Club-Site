@@ -24,6 +24,7 @@ class Footer extends LitElement{
         return html`
 <footer>
 <div id="footer-heading">Ⓒ Grand Canyon University</div>
+
 </footer>`;
     }
 
