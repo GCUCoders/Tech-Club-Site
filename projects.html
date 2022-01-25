@@ -101,12 +101,27 @@
 <div class="text"></div>project#1
 </div>
 
-<div class="mySlides fade"> <!--style="max-width: 100;"-->
-<!-- second image -->
-<div class="numbertext" >2 / 3</div>
-<img class="projects-img"src="images/luffy vs kaido.jpg">
-<div class="text"></div>project #2
-</div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (const slide of slides) {
+                        slide.style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) slideIndex = 1;
+                    for (const dot of dots) {
+                        dot.classList.remove('project-active');
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].classList.add('project-active');
+                    setTimeout(showSlides, 8000); // Change image every 8 seconds
+                }
+            </script>
 
 <div class="mySlides fade"><!--style="max-width: 100;"-->
 <div class="numbertext">3 / 3</div>
