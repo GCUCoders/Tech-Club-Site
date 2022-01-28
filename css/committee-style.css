@@ -1,4 +1,5 @@
-/* CSS for entire page */ 
+/* CSS for entire page */
+
 body {
     background-color:#522398; 
 }
@@ -37,20 +38,22 @@ footer {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     /* background-color: #522398;   */
 }
+
 .left-div .selection {
-    border-bottom:1px solid white;
+    border-bottom: 1px solid white;
 }
+
 .left-div .side-menu {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 /* right column styling */
 .right-div {
-    width: 85%; 
+    width: 85%;
     height: 100%;
-    background-color: #A68AC8; 
+    background-color: #A68AC8;
 }
 
 /* description styling */
@@ -82,17 +85,20 @@ footer {
     font-size:large;
     /* background-color: #EAE3F1;  */
 }
+
 .content-body div {
     background-color: #774BAA;
-    line-height:1.75;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius:8px;
-    padding:8px;
+    line-height: 1.75;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+    padding: 8px;
 }
 
+
 /* */
+
 .selection:hover {
-    cursor:pointer;
+    cursor: pointer;
 }
 
 /* Logo image styling */
@@ -124,19 +130,23 @@ p big {
 
 /* ID's  */
 #web-dev:hover {
-    background-color:#A68AC8;
+    background-color: #A68AC8;
 }
+
 #embedded:hover {
-    background-color:#A68AC8;
+    background-color: #A68AC8;
 }
+
 #cyber:hover {
-    background-color:#A68AC8;
+    background-color: #A68AC8;
 }
+
 #girls-who-code:hover {
-    background-color:#A68AC8;
+    background-color: #A68AC8;
 }
+
 #hardware:hover {
-    background-color:#A68AC8;
+    background-color: #A68AC8;
 }
 #defaultContentIMG {
     width: 25vw;
@@ -157,11 +167,11 @@ p big {
 /*  <= 1000px    */
 @media (max-width: 1000px) {
     img.logo {
-        width:35%; 
+        width: 35%;
     }
     img.content {
-        width:75%;
-        min-height:300px;
+        width: 75%;
+        min-height: 300px;
     }
     #defaultContentIMG {
         width: 40vw;
@@ -185,21 +195,21 @@ p big {
 /*  <= 600px    */
 @media (max-width: 600px) {
     img.logo {
-        width:30%; 
-        min-height:200px;
+        width: 30%;
+        min-height: 200px;
     }
     img.content {
-        width:100%;
-        height:auto;
+        width: 100%;
+        height: auto;
     }
     .content-title {
-        font-size:large;
+        font-size: large;
     }
     .navbar li {
-        font-size:12px;
+        font-size: 12px;
     }
     .navbar ul {
-        width:100%;
+        width: 100%;
     }
     #defaultContentIMG {
         width: 50vw;
@@ -209,21 +219,21 @@ p big {
 /*  <= 550px    */ 
 @media (max-width:550px) {
     .left-div .selection {
-        font-size:smaller;
+        font-size: smaller;
     }
 }
 /*  <= 475px    */
 @media (max-width: 475px) {
     .left-div .selection {
-        font-size:smaller;
+        font-size: smaller;
     }
     .left-div {
-        width:25%;
+        width: 25%;
     }
     img.logo {
-        width:50vw;
-        height:18vw;
-        transform:translate(8px, 0px); 
+        width: 50vw;
+        height: 18vw;
+        transform: translate(8px, 0px);
     }
     #defaultContentIMG {
         width: 55vw;

@@ -99,10 +99,10 @@
                     slideIndex++;
                     if (slideIndex > slides.length) slideIndex = 1;
                     for (const dot of dots) {
-                        dot.classList.remove('active');
+                        dot.classList.remove('project-active');
                     }
                     slides[slideIndex - 1].style.display = "block";
-                    dots[slideIndex - 1].classList.add('active');
+                    dots[slideIndex - 1].classList.add('project-active');
                     setTimeout(showSlides, 8000); // Change image every 8 seconds
                 }
             </script>
