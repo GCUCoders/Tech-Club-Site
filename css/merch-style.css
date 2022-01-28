@@ -1,204 +1,194 @@
-@import url('http://fonts.googleapis.com/css?family=Raleway:300');
-@import url('http://fonts.googleapis.com/css?family=NTR');
+@import url("http://fonts.googleapis.com/css?family=Raleway:300");
+@import url("http://fonts.googleapis.com/css?family=NTR");
 
 /* CSS needed for Gradient Background */
 .body {
-    margin: 0;
-    font-size: large;
-    background: linear-gradient(180deg,
-            hsla(0, 0%, 100%, 1) 0%,
-            hsla(279, 82%, 22%, 1) 45%);
-    background-repeat: repeat-x;
-    background-size: cover;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    min-height: 1000px;
+  margin: 0;
+
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 100%, 1) 0%,
+    hsla(279, 82%, 22%, 1) 45%
+  );
+  background-repeat: repeat-x;
+  background-size: cover;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  min-height: 1000px;
 }
 
-.details
-{
-    background-color: #522398;
-    color: white;
-    font-size: larger;
-    
+.details {
+  background-color: #522398;
+  color: white;
+  font-size: larger;
 }
 
 /* CSS needed to center an element on the page */
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-
 
 /* Flexbox formatting */
-.flexContainer
-{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.flexContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.row
-{
-    flex-direction: row;
+.row {
+  flex-direction: row;
 }
 
-.twoAcross img
-{
-    max-width: 50%;
-} 
-
-
-
+.twoAcross img {
+  max-width: 50%;
+}
 
 .merch-a {
-    text-decoration: none;
-    color: black;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: background-color .5s;
-    margin: auto;
-    
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+  margin: auto;
 }
- 
+
 .merch-a:hover {
-    background-color:black;
-    color:white;
-    transition: background-color .5s;
+  background-color: black;
+  color: white;
+  transition: background-color 0.5s;
 }
 .merch-h1 {
-    text-align: center;
+  text-align: center;
 }
 #merch-align {
-    margin-left: 30px;
-    margin-top: 20px;
-    padding-bottom: 10px;
+  margin-left: 30px;
+  margin-top: 20px;
+  padding-bottom: 10px;
 }
 
 #merch-pad {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-
 
 .merch-a {
-    text-decoration: none;
-    color: black;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: background-color .5s;
-    margin: auto;
-    
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+  margin: auto;
 }
- 
+
 .merch-a:hover {
-    background-color:black;
-    color:white;
-    transition: background-color .5s;
+  background-color: black;
+  color: white;
+  transition: background-color 0.5s;
 }
 .merch-h1 {
-    text-align: center;
+  text-align: center;
 }
 #merch-align {
-    margin-left: 30px;
-    margin-top: 20px;
-    padding-bottom: 10px;
+  margin-left: 30px;
+  margin-top: 20px;
+  padding-bottom: 10px;
 }
 
 #merch-pad {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 html,
 #merch-body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  #merch-div1 {
-    background: #522398;
-    width: 14.71%;
-    height: 9.71%;
-    float: left;
-    border-style: solid;
-    border-width: 1px;
-  }
-  
-  #merch-div2 {
-    background: #774BAA;
-    width: 85%;
-    height: 9.71%;
-    float: left;
-    border-style: solid;
-    border-width: 1px;
-  }
-  
-  #merch-div3 {
-    background: #774BAA;
-    width: 14.71%;
-    height: 90%;
-    float: left;
-    border-style: solid;
-    border-width: 1px;
-  }
-  
-  #merch-div4 {
-    background: #A68AC8;
-    width: 85%;
-    height: 90%;
-    float: left;
-    border-style: solid;
-    border-width: 1px;
-  }
-  #pic-div {
-    background: #A68AC8;
-    width: 33.3%;
-    height: 50%;
-    float: left;
-    text-align: center;
-    font-size: 20px;
-  }
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+#merch-div1 {
+  background: #522398;
+  width: 14.71%;
+  height: 9.71%;
+  float: left;
+  border-style: solid;
+  border-width: 1px;
+}
 
-  #merch-temp {
-    background: #774BAA;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-  }
+#merch-div2 {
+  background: #774baa;
+  width: 85%;
+  height: 9.71%;
+  float: left;
+  border-style: solid;
+  border-width: 1px;
+}
 
-  #merch-temp-card {
-    background: #A68AC8;
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: helvetica;
-  }
+#merch-div3 {
+  background: #774baa;
+  width: 14.71%;
+  height: 90%;
+  float: left;
+  border-style: solid;
+  border-width: 1px;
+}
 
-  .merch-temp-img {
-    width: 100%;
-  }
+#merch-div4 {
+  background: #a68ac8;
+  width: 85%;
+  height: 90%;
+  float: left;
+  border-style: solid;
+  border-width: 1px;
+}
+#pic-div {
+  background: #a68ac8;
+  width: 33.3%;
+  height: 50%;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+}
 
-  #product-div {
-    float: left;
-    width: 50%;
-    height:100%;
-  }
-  #product-div2 {
-    background: #A68AC8;
-    width: 50%;
-    height: 90%;
-    float: left;
-  }
+#merch-temp {
+  background: #774baa;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#merch-temp-card {
+  background: #a68ac8;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: helvetica;
+}
+
+.merch-temp-img {
+  width: 100%;
+}
+
+#product-div {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+#product-div2 {
+  background: #a68ac8;
+  width: 50%;
+  height: 90%;
+  float: left;
+}
 
 .merch-F {
-    color: black;
-    padding: 8px 16px;
-    float: right;
-  }
+  color: black;
+  padding: 8px 16px;
+  float: right;
+}
 
 .merch-F:hover {
-    color:#522398;
-    transition: background-color .5s;
+  color: #522398;
+  transition: background-color 0.5s;
 }
 .merch-product {
   display: block;
@@ -210,46 +200,45 @@ html,
 }
 
 .merch-a {
-    text-decoration: none;
-    color: black;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: background-color .5s;
-    margin: auto;
-    
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+  margin: auto;
 }
- 
+
 .merch-a:hover {
-    background-color:black;
-    color:white;
-    transition: background-color .5s;
+  background-color: black;
+  color: white;
+  transition: background-color 0.5s;
 }
 .merch-h1 {
-    text-align: center;
+  text-align: center;
 }
 #merch-align {
-    margin-left: 30px;
-    margin-top: 20px;
-    padding-bottom: 10px;
+  margin-left: 30px;
+  margin-top: 20px;
+  padding-bottom: 10px;
 }
 
 #merch-pad {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .product-img {
-  float:right;
+  float: right;
   border-style: double;
   margin-left: 10%;
   margin-top: 5%;
   max-width: 50%;
   max-height: 50%;
   margin: 60%;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .product-info-div {
-  float:left; 
+  float: left;
   width: 33.3%;
   height: 100%;
   background-color: black;
