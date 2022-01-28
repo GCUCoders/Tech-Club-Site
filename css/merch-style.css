@@ -2,7 +2,7 @@
 @import url('http://fonts.googleapis.com/css?family=NTR');
 
 /* CSS needed for Gradient Background */
-.body {
+/* .body {
     margin: 0;
     font-size: large;
     background: linear-gradient(180deg,
@@ -12,7 +12,7 @@
     background-size: cover;
     font-family: Georgia, "Times New Roman", Times, serif;
     min-height: 1000px;
-}
+} */
 
 .details
 {
@@ -160,7 +160,7 @@ html,
   }
 
   #merch-temp {
-    background: #774BAA;
+    /* background: #774BAA; */
     width: 100%;
     height: 100%;
     text-align: center;
