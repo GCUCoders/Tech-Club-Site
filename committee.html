@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Start of Head -->
 <head>
+    <!-- meta data ? -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tab icon -->
+    <link rel="icon" href="images/Navbar-Logo.png">
+
     <!-- Tab Title -->
     <title>Committees Page - Tech Club</title>
+
     <!-- Link to JavaScript -->
     <script src="js/committee.js"></script>
+
     <!-- Link to Navbar CSS -->
     <link rel="stylesheet" href="css/navbar-style.css">
+
     <!-- Link to Committee page CSS -->
     <link rel="stylesheet" href="css/committee-style.css">
+
     <!-- Link to jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
+    <!-- Quick CSS Styling -->
     <style>
-        p big {
-            color: gold;
-        }
         
-        .left-div div {
-            /* border-bottom: 1px solid white; */
-            /* border-top: 1px solid white; */
-            padding: 20px 0px;
-        }
-        
-        @media (max-width:750px) {
-            .left-div .selection {
-                font-size: small;
-                /* border-bottom:1px solid white; */
-            }
-            .left-div {
-                width: 25%;
-            }
-        }
     </style>
+    <!-- End Temp CSS Styling -->
+
 </head>
+<!-- End of Head section -->
+
+
 
 <!-- Start of Body section -->
-
 <body>
 
+    <!-- GCU Navbar -->
     <nav class="navbar">
         <a href="index.html"><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo"></a>
         <a href="#" class="toggle-button" style="margin-top: 20px;">
@@ -55,10 +53,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="calendar.html">Calendar</a></li>
-                <li class="dropdown">
-                    <a href="committee.html">Committees</a>
-
-                </li>
+                <li class="dropdown"><a href="committee.html">Committees</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="merch.html">Merch</a></li>
                 <li style="margin-right: 10px;"><a href="contact.html">Contact</a></li>
@@ -67,87 +62,123 @@
     </nav>
 
 
-    <!-- Main Content Div -->
+
+    <!-- Main Div -->
     <div class="main-div" align="center">
 
-        <!-- Start of Left Div -->
+        <!-- Start of Left Column Div -->
         <div class="left-div">
+
             <!-- Show Web Development committee button -->
             <div id="web-dev" class="selection" onclick="showWebDev();">
                 <span>Website Development</span>
             </div>
+
             <!-- Show Embedded Development committee button -->
             <div id="embedded" class="selection" onclick="showEmbedded();">
                 Embedded Development
             </div>
+
             <!-- Show Cybersecurity committee button -->
             <div id="cyber" class="selection" onclick="showCyber();">
                 Cybersecurity
             </div>
+
             <!-- Show Girls Who Code committee button -->
             <div id="girls-who-code" class="selection" onclick="showGWC();">
                 Girls Who Code
             </div>
+
             <!-- Show Hardware committee button -->
             <div id="hardware" class="selection" onclick="showHardware();">
                 Hardware
             </div>
+
         </div>
-        <!-- End of Left Div inside Main Content Div-->
+        <!-- End of Left Column Div inside Main Div-->
 
 
         <!-- (This is where committee information will appear in the main content div) -->
-        <!-- Start of Right Div -->
-        <div class="right-div" style="overflow-y: scroll;">
 
-            <!-- Content Title -->
+        <!-- Start of Right Column Div -->
+        <div class="right-div"
+            style="overflow-y: scroll;"> <!-- Scroll on -->
+
+            <!-- Content Title (currently disabled)-->
             <div id="content-title" class="content-title">Committee Title</div>
 
             <!-- Content Body -->
             <div id="content-body" class="content-body">
 
-                <p style="font-size:x-large; color:#522398">
-                    Welcome to the Committees Page!<br><br> (Page Author: @shazebs)
+                <!-- default content text -->
+                <p style="font-size:x-large; color:white; font-weight:bolder;">
+                    Welcome to the Committees Page!<hr color="white">
+                    <img id="defaultContentIMG" src="images/Navbar-Logo.png">
                 </p>
-                <!-- Set Right Div height via JS code (temporary fix) -->
+
+                <!-- Set Right Div height via JS code (temporary fix) ? -->
                 <script>
-                    document.getElementById('content-body').style.height = '550px';
+                    document.getElementById('content-body').style.height = '550px'; 
                 </script>
 
             </div>
         </div>
-        <!-- End of Right Div inside Main Content Div -->
-
+        <!-- End of Right Column Div inside Main Div -->
     </div>
-    <!-- End of Main Content Div -->
-    <!-- This container will be inserted into main content area -->
+    <!-- End of Main Div -->
+
+
+
+<!-- Draw text for paragraphs from this section (database ?)-->
+<!--|-->
+    <!-- Paragraphs from this container will be inserted into main content area -->
     <div style="display:none;">
         <br>
-        <p style="color:white;" id="info-webdevelopment">
-            Web development teaches everyone at all levels to code on website. We design the coding to create our own website. In web design, you can learn about software development, computer science, learning the basics of coding.
+        <!-- web development info -->
+        <p style="color:white;"
+            id="info-webdevelopment">
+            Web development teaches everyone at all levels to code on website. We design the coding to create our own website. In web design, you can learn about software development, computer science, learning the basics of coding. 
         </p>
-        <p style="color:white;" id="info-embeddeddevelopment">
-            This committee deals with the small devices, getting hands on with hardware hacking, physical projects, and more! Raspberry Pi’s, Arduinos, Soldering Irons, and plenty of programming is seen each time a new project is made! Whether you have been making
-            your own embedded projects for years, or you are new to programming and electronics and want to learn, there is a spot for you here. The only requirement is you want to get hands on with tiny devices and make something new!
+        <!-- embedded development info -->
+        <p style="color:white;"
+            id="info-embeddeddevelopment">
+            This committee deals with the small devices, getting hands on with hardware hacking, physical projects, and more! Raspberry Pi’s, Arduinos, Soldering Irons, and plenty of programming is seen each time a new project is made! Whether you have been making your own embedded projects for years, or you are new to programming and electronics and want to learn, there is a spot for you here. The only requirement is you want to get hands on with tiny devices and make something new! 
         </p>
-        <p style="color:white;" id="info-hardware">
-            This committee is where the large devices live, and all the sys-admins hang out and work on desktop computers to server racks! Hardware and Software Virtualization, RAM and Hard Drives are staples of this club, and if you want to get into the weeds with
-            Linux, Containers, Network Switches and more, then join us, whether you are an expert or beginner.
+        <!-- hardware info -->
+        <p style="color:white;"
+            id="info-hardware">
+            This committee is where the large devices live, and all the sys-admins hang out and work on desktop computers to server racks! Hardware and Software Virtualization, RAM and Hard Drives are staples of this club, and if you want to get into the weeds with Linux, Containers, Network Switches and more, then join us, whether you are an expert or beginner. 
         </p>
-        <p style="color:white;" id="info-cybersecurity">
-            In the cyber security committee, we do both offensive and defensive security. We will do live demonstrations of different hacking tools. Additionally, we will show students how to hack into things like web servers and personal computers. On top of that
-            we host various competitions and events to help give students relevant experience as well as an opportunity to win prizes.
+        <!-- cybersecurity info -->
+        <p style="color:white;"
+            id="info-cybersecurity">
+            In the cyber security committee, we do both offensive and defensive security. We will do live demonstrations of different hacking tools. Additionally, we will show students how to hack into things like web servers and personal computers. On top of that we host various competitions and events to help give students relevant experience as well as an opportunity to win prizes. 
         </p>
-        <p style="color:white;" id="info-girlswhocode">
-            (Speak to committee lead to fill in this section)
+        <!-- girls who code info -->
+        <p style="color:white;"
+            id="info-girlswhocode">
+            Girls Who Code is a national organization that operates to peek the interest of Phoenix-native high school girls towards the technology industry.
+            
         </p>
     </div>
 
+
+   
     <!-- Footer -->
     <br>
     <footer>Grand Canyon University 2021 | All Rights Reserved.</footer>
     <script src="js/mobile-toggle.js"></script>
+
+
+    
 </body>
 <!-- End of Body section -->
 
 </html>
+
+<!-- 
+    Author: Shazeb Suhail
+    Major:  Software Development 
+    Date:   1/19/2022 (last modification)
+    Skills: JavaScript, PHP, HTML, CSS, MySQL, C#, Java, C++, NodeJS 
+-->
