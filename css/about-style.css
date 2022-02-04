@@ -25,6 +25,11 @@
   font-size: 50px;
 }
 
+.title a{
+  text-decoration: none;
+  color: white;
+}
+
 .mission {
   background-image: url("../images/mission_pic.jpg");
   background-repeat: no-repeat;
