@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/navbar-style.css" />
+    <link rel="stylesheet" href="css/admin-style.css" />
+  </head>
+  <body class="body">
+    <nav class="navbar">
+      <a href="index.html"
+        ><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo"
+      /></a>
+      <a href="#" class="toggle-button" style="margin-top: 20px">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li class="dropdown">
+            <a href="committee.html">Committees</a>
+          </li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="merch.html">Merch</a></li>
+          <li style="margin-right: 10px">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="admin-div">
+      <label style="font-weight: bold; font-size: 2rem; color: white"
+        >ADMIN LOGIN</label
+      ><br />
+      <input type="text" id="username" placeholder="Username" required /> <br />
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        required
+      /><br /><br />
+      <button id="admin-button" type="submit">Login</button>
+    </div>
+
+    <script src="js/mobile-toggle.js" async defer></script>
+  </body>
+</html>
