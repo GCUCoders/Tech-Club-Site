@@ -38,17 +38,10 @@ function showWebDev()
     // set content title 
     title.innerText = 'Web Development Committee'; 
 
-<<<<<<< Updated upstream
-    // create markup that sets an image and 
-    let codeline = '<img class="content" src="images/webdev_customImg.png"><br><br><div>' + 
-    // cool way to query select an id on the document 
-    $("#info-webdevelopment").text() + '</div>'; 
-=======
     // create image element
     const img = document.createElement('img'); 
     img.classList.add('content'); 
     img.src = 'images/webdev_customImg.png'; 
->>>>>>> Stashed changes
 
     // create description element
     const description = document.createElement('div'); 
@@ -78,14 +71,9 @@ function showEmbedded()
     img.classList.add('content');
     img.src = 'https://www.ssla.co.uk/wp-content/uploads/2020/10/embedded-software-entwickler-entwicklung-tasks.png';
 
-<<<<<<< Updated upstream
-    const desc = document.createElement('div');
-    desc.innerHTML = $("#info-embeddeddevelopment").text();
-=======
     // create description element
     const description = document.createElement('div');
     description.innerHTML = $("#info-embeddeddevelopment").text();
->>>>>>> Stashed changes
 
     // add elements into content node 
     body.replaceChildren(img, document.createElement('br'), document.createElement('br'), description);
@@ -106,10 +94,6 @@ function showCyber()
     // set content title  
     title.innerText = 'Cybersecurity Committee'; 
 
-<<<<<<< Updated upstream
-    // Create some markup to write to page displaying an image and text via query select
-    let codeline = '<img class="content" src="images/cyber_img.png"><br><br><div>' + $("#info-cybersecurity").text() + '</div>';
-=======
     // create image element 
     const img = document.createElement('img');
     img.classList.add('content');
@@ -118,7 +102,6 @@ function showCyber()
     // create description element
     const description = document.createElement('div');
     description.innerHTML = $("#info-cybersecurity").text();
->>>>>>> Stashed changes
 
     // add elements into content node 
     body.replaceChildren(img, document.createElement('br'), document.createElement('br'), description);
@@ -139,16 +122,10 @@ function showGWC()
     // set content title 
     title.innerText = 'Girls Who Code Committee'; 
 
-<<<<<<< Updated upstream
-    // Create some markup to page displaying the committee image and description 
-    let codeline = '<img class="content" src="images/gwc_logo1.png"><br><br><div>' + 
-    $("#info-girlswhocode").text() + '<br>Check out their website at:  <a style="color:white; font-size:bolder;" href="https://girlswhocode.com/" target="_blank">www.girlswhocode.com</a></div>'; 
-=======
     // create image element 
     const img = document.createElement('img');
     img.classList.add('content');
     img.src = 'images/gwc_logo1.png';
->>>>>>> Stashed changes
 
     // create description element
     const description = document.createElement('div');
@@ -172,14 +149,6 @@ function showHardware()
     // Set the right column div title. 
     title.innerText = 'Hardware Committee'; 
 
-<<<<<<< Updated upstream
-    // Create some markup displaying committee image and text 
-    let codeline = '<img class="content" src="images/hardware-committee-img.png"><br><br><div>' + 
-    $("#info-hardware").text() + '</div>'; 
-    
-    // Write markup to page. 
-    body.innerHTML = codeline; 
-=======
     // create image element 
     const img = document.createElement('img');
     img.classList.add('content');
@@ -191,7 +160,6 @@ function showHardware()
 
     // add elements into content node 
     body.replaceChildren(img, document.createElement('br'), document.createElement('br'), description);
->>>>>>> Stashed changes
 
     // highlight hardware tab 
     highlightSelection('hardware');
