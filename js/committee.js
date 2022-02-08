@@ -43,7 +43,7 @@ function showWebDev()
     // create markup that sets an image and 
     let codeline = '<img class="content" src="images/webdev_customImg.png"><br><br><div>' + 
     // cool way to query select an id on the document 
-    $("#info-webdevelopment").text() + '</div><br>'; 
+    $("#info-webdevelopment").text() + '</div>'; 
 
     // write the markup to document 
     body.innerHTML = codeline;  
@@ -69,7 +69,7 @@ function showEmbedded()
     img.src = 'https://www.ssla.co.uk/wp-content/uploads/2020/10/embedded-software-entwickler-entwicklung-tasks.png';
 
     const desc = document.createElement('div');
-    desc.innerHTML = $("#info-embeddeddevelopment").text() + '<br>';
+    desc.innerHTML = $("#info-embeddeddevelopment").text();
 
     //body.innerHTML = '<img class="content" src="https://www.ssla.co.uk/wp-content/uploads/2020/10/embedded-software-entwickler-entwicklung-tasks.png"/><br><br><div>' + 
     //$("#info-embeddeddevelopment").text() + '</div><br>'; 
@@ -91,7 +91,7 @@ function showCyber()
     title.innerText = 'Cybersecurity Committee'; 
 
     // Create some markup to write to page displaying an image and text via query select
-    let codeline = '<img class="content" src="images/cyber_img.png"><br><br><div>' + $("#info-cybersecurity").text() + '</div><br>';
+    let codeline = '<img class="content" src="images/cyber_img.png"><br><br><div>' + $("#info-cybersecurity").text() + '</div>';
 
     // Write markup to the document. 
     body.innerHTML = codeline; 
@@ -113,7 +113,7 @@ function showGWC()
 
     // Create some markup to page displaying the committee image and description 
     let codeline = '<img class="content" src="images/gwc_logo1.png"><br><br><div>' + 
-    $("#info-girlswhocode").text() + '<br>Check out their website at:  <a style="color:white; font-size:bolder;" href="https://girlswhocode.com/" target="_blank">www.girlswhocode.com</a></div><br>'; 
+    $("#info-girlswhocode").text() + '<br>Check out their website at:  <a style="color:white; font-size:bolder;" href="https://girlswhocode.com/" target="_blank">www.girlswhocode.com</a></div>'; 
 
     // Write markup to the document. 
     body.innerHTML = codeline; 
@@ -135,7 +135,7 @@ function showHardware()
 
     // Create some markup displaying committee image and text 
     let codeline = '<img class="content" src="images/hardware-committee-img.png"><br><br><div>' + 
-    $("#info-hardware").text() + '</div><br>'; 
+    $("#info-hardware").text() + '</div>'; 
     
     // Write markup to page. 
     body.innerHTML = codeline; 
