@@ -134,7 +134,7 @@ function showHardware()
     title.innerText = 'Hardware Committee'; 
 
     // Create some markup displaying committee image and text 
-    let codeline = '<img class="content" src="https://www.lifewire.com/thmb/KW1l5x2qWzGVHf5Fl7yAD8OwwcQ=/3000x2000/filters:fill(auto,1)/computer-hardware-2625895-final-v1-8c909b8a32434e26a225db2314823bb2.jpg"><br><br><div>' + 
+    let codeline = '<img class="content" src="images/hardware-committee-img.png"><br><br><div>' + 
     $("#info-hardware").text() + '</div><br>'; 
     
     // Write markup to page. 

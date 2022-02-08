@@ -129,25 +129,6 @@ p big {
 
 
 /* ID's  */
-#web-dev:hover {
-    background-color: #A68AC8;
-}
-
-#embedded:hover {
-    background-color: #A68AC8;
-}
-
-#cyber:hover {
-    background-color: #A68AC8;
-}
-
-#girls-who-code:hover {
-    background-color: #A68AC8;
-}
-
-#hardware:hover {
-    background-color: #A68AC8;
-}
 #defaultContentIMG {
     width: 25vw;
     height:25vw;
@@ -240,4 +221,3 @@ p big {
         height: 55vw;
     }
 }
-
