@@ -1,64 +1,116 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="css/about-style.css" />
+    <link rel="stylesheet" href="css/navbar-style.css" />
+  </head>
 
-<head>
-    <link rel="stylesheet" href="css/about-style.css">
-    <link rel="stylesheet" href="css/navbar-style.css">
-</head>
-
-<body class="body">
+  <body class="body">
     <header>
-        <nav class="navbar">
-            <a href="index.html"><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo"></a>
-            <a href="#" class="toggle-button" style="margin-top: 20px;">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="calendar.html">Calendar</a></li>
-                    <li class="dropdown">
-                        <a href="committee.html">Committees</a>
-
-                    </li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="merch.html">Merch</a></li>
-                    <li style="margin-right: 10px;"><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <a href="index.html">
+          <img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo"/>
+        </a>
+        <a href="#" class="toggle-button" style="margin-top: 20px">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li class="dropdown">
+              <a href="committee.html">Committees</a>
+            </li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="merch.html">Merch</a></li>
+            <li style="margin-right: 10px">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <div style="background-color: rgb(97, 49, 145); overflow: hidden;">
-        <h1 class="title">Mission</h1>
-        <img src="placeholder.jpg" class="innerPicLeft" alt="Misson">
+    <div class="mission">
+      <h1 class="title">Mission</h1>
+    <p>Our mission is to celebrate and promote interest and innovation in every field of technology.</p>
     </div>
-    <div style="background-color: black; overflow: hidden;">
-        <h1 class="title">Leadership</h1>
-        <img src="placeholder.jpg" class="innerPicLeft" alt="leader 1">
-        <div class="nameLeft">Leader name 1</div>
-        <div class="pLeft">About leader one here</div>
-        <hr size="3px" width="95%" color="#4B0082">
-        <img src="placeholder.jpg" class="innerPicRight" alt="leader 2">
-        <div class="nameRight">Leader name 2</div>
-        <div class="pRight">About leader two here</div>
-        <hr size="3px" width="95%" color="#4B0082">
-        <img src="placeholder.jpg" class="innerPicLeft" alt="leader 3">
-        <div class="nameLeft">Leader name 3</div>
-        <div class="pLeft">About leader three here</div>
-        <hr size="3px" width="95%" color="#4B0082">
-        <img src="placeholder.jpg" class="innerPicRight" alt="leader 4">
-        <div class="nameRight">Leader name 4</div>
-        <div class="pRight">About leader four here</div>
+    <div class="leaders">
+      <div id="container">
+        <!-- A div with card class for the card  -->
+        <div class="card">
+          <img src="images/president.jpg" alt="president" />
 
+          <!-- A div with card__details class to hold the details in the card  -->
+          <div class="card__details">
+            <!-- A div with name class for the name of the card -->
+            <div class="name">President</div>
+
+            <p>
+              Leader quote
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="container">
+        <!-- A div with card class for the card  -->
+        <div class="card">
+          <img src="images/treasurer.jpg" alt="treasurer" />
+
+          <!-- A div with card__details class to hold the details in the card  -->
+          <div class="card__details">
+            <!-- A div with name class for the name of the card -->
+            <div class="name">Treasurer</div>
+
+            <p>
+              Leader quote
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="container">
+        <!-- A div with card class for the card  -->
+        <div class="card">
+          <img src="images/eligiah.jpg" alt="Web Dev Lead" />
+
+          <!-- A div with card__details class to hold the details in the card  -->
+          <div class="card__details">
+            <!-- A div with name class for the name of the card -->
+            <div class="name">Web Dev Lead</div>
+
+            <p>
+              Leader quote
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="container">
+        <!-- A div with card class for the card  -->
+        <div class="card">
+          <img src="images/max.jpg" alt="Web Dev Lead" />
+
+          <!-- A div with card__details class to hold the details in the card  -->
+          <div class="card__details">
+            <!-- A div with name class for the name of the card -->
+            <div class="name">Web Dev Lead</div>
+
+            <p>
+              Leader quote
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div style="background-color: rgb(97, 49, 145); overflow: hidden;">
-        <h1 class="title">Contact Us</h1>
+    <div style="background-color: rgb(97, 49, 145); overflow: hidden">
+      <h1 class="title"><a href="contact.html">Contact Us</a></h1>
     </div>
     <p class="center"></p>
-    <div>
-    </div>
+    <div></div>
     <script src="js/mobile-toggle.js"></script>
-</body>
+  </body>
+</html>
