@@ -2,19 +2,17 @@
 @import url("http://fonts.googleapis.com/css?family=NTR");
 
 /* CSS needed for Gradient Background */
-.body {
-  margin: 0;
-
-  background: linear-gradient(
-    180deg,
-    hsla(0, 0%, 100%, 1) 0%,
-    hsla(279, 82%, 22%, 1) 45%
-  );
-  background-repeat: repeat-x;
-  background-size: cover;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  min-height: 1000px;
-}
+/* .body {
+    margin: 0;
+    font-size: large;
+    background: linear-gradient(180deg,
+            hsla(0, 0%, 100%, 1) 0%,
+            hsla(279, 82%, 22%, 1) 45%);
+    background-repeat: repeat-x;
+    background-size: cover;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    min-height: 1000px;
+} */
 
 .details {
   background-color: #522398;
@@ -149,12 +147,12 @@ html,
   font-size: 20px;
 }
 
-#merch-temp {
-  background: #774baa;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
+  #merch-temp {
+    /* background: #774BAA; */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
 
 #merch-temp-card {
   background: #a68ac8;
