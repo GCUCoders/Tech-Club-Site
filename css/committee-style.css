@@ -1,9 +1,5 @@
 /* CSS for entire page */
 
-body {
-    background-color:#522398; 
-}
-
 /* footer styling */ 
 footer {
     background-color:black; 
@@ -72,7 +68,7 @@ footer {
     text-align:center;
     font-size:x-large;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display:none;
+    /* display:none; */
     /* background-color: #774BAA; */
     /* height:30px;  */
 }
