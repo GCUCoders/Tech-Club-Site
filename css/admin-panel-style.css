@@ -13,38 +13,38 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#save {
+.save {
   grid-row-start: 4;
   grid-column-start: 3;
 
   grid-row-end: 5;
   grid-column-end: 5;
 }
-#delete {
+.delete {
   grid-row-start: 4;
   grid-column-start: 1;
 
   grid-row-end: 5;
   grid-column-end: 3;
 }
-#committee-title {
+.committee-title {
   grid-row-start: 1;
   grid-column-start: 1;
 
   grid-row-end: 2;
   grid-column-end: 5;
 }
-#committee-title > input {
+.committee-title > input {
   width: 100%;
 }
-#committee-description {
+.committee-description {
   grid-row-start: 2;
   grid-column-start: 1;
 
   grid-row-end: 4;
   grid-column-end: 5;
 }
-#committee-description > textarea {
+.committee-description > textarea {
   resize: none;
 }
 button {
@@ -58,4 +58,8 @@ button {
   color: black;
   text-align: center;
   text-decoration: none;
+}
+
+.hidden {
+  display: none !important;
 }
