@@ -1,34 +1,29 @@
-/* CSS for entire page */ 
-body {
-    background-color:black; 
-}
+/* CSS for entire page */
 
-/* Styling for bottom of page */
+/* footer styling */ 
 footer {
     background-color:black; 
     color:white; 
     text-align:center; 
-    padding:10px 0px 30px 0px; 
+    padding: 20px; 
 }
 
-
-/* */
+/* main div styling */
 .main-div {
     background-color: #774BAA; 
     width:100%;
+    height:auto;
+    margin-bottom:-18.5px;
+    display:flex;
+    border: 2px solid white;
     /* max-width:100%;  */
     /* height:500px; */
-    height:auto;
-    margin-bottom:10px;
-    display:flex;
-    /* border: 2px solid white; */
 }
 
-/* */
+/* left column styling */
 .left-div {
     width: 15%; 
     height:100%; 
-    /* background-color: #522398;   */
     background-color: #774BAA;  
     color:white;
     font-size:smaller; 
@@ -37,80 +32,69 @@ footer {
     display:flex;
     justify-content: space-between;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    /* background-color: #522398;   */
 }
+
 .left-div .selection {
-    border-bottom:1px solid white;
+    border-bottom: 1px solid white;
 }
+
 .left-div .side-menu {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/* */
+/* right column styling */
 .right-div {
-    width: 85%; 
+    width: 85%;
     height: 100%;
-    background-color: #A68AC8; 
+    background-color: #A68AC8;
 }
 
-/* */
-.content-div {
+/* description styling */
+/* .content-div {
     display:flex;
     flex-direction:column;
     background-color: #A68AC8; 
-}
+} */
 
-/* */
+/* right column title section */
 .content-title {
-    /* height:30px;  */
     padding: 10px 0px 10px 0px; 
-    /* background-color: #774BAA; */
     background-color: #A68AC8;
     color:black;
     width:100%; 
     text-align:center;
     font-size:x-large;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display:none;
+    /* display:none; */
+    /* background-color: #774BAA; */
+    /* height:30px;  */
 }
 
-/* */
+/* right column body section */
 .content-body {
     padding:5px;
-    /* background-color: #EAE3F1;  */
     color:white; 
     text-align:center;
     font-size:large;
+    /* background-color: #EAE3F1;  */
 }
+
 .content-body div {
     background-color: #774BAA;
-    line-height:1.75;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius:8px;
-    padding:8px;
+    line-height: 1.75;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+    padding: 8px;
 }
 
+
 /* */
+
 .selection:hover {
-    cursor:pointer;
-}
-
-/* */
-#web-dev:hover {
-    background-color:#A68AC8;
-}
-#embedded:hover {
-    background-color:#A68AC8;
-}
-#cyber:hover {
-    background-color:#A68AC8;
-}
-#girls-who-code:hover {
-    background-color:#A68AC8;
-}
-#hardware:hover {
-    background-color:#A68AC8;
+    cursor: pointer;
 }
 
 /* Logo image styling */
@@ -128,53 +112,108 @@ img.content {
     /* height:22vw; */
 }
 
-/* CSS styling for screen sizes <= 1000px */
+p big {
+    color: gold;
+}
+
+.left-div div {
+    padding: 20px 0px;
+    /* border-bottom: 1px solid white; */
+    /* border-top: 1px solid white; */
+}
+
+
+
+/* ID's  */
+#defaultContentIMG {
+    width: 25vw;
+    height:25vw;
+}
+
+
+
+/* @media tags for screen-size scaling */
+/*  <= 1300px    */
+@media (max-width: 1300px)
+{   
+    #defaultContentIMG {
+        width: 35vw;
+        height: 35vw;
+    }
+}
+/*  <= 1000px    */
 @media (max-width: 1000px) {
     img.logo {
-        width:35%; 
+        width: 35%;
     }
     img.content {
-        width:75%;
-        min-height:300px;
+        width: 75%;
+        min-height: 300px;
+    }
+    #defaultContentIMG {
+        width: 40vw;
+        height: 40vw;
     }
 }
-
-/* CSS styling for screen sizes <= 600px */
-@media (max-width: 600px) {
-    img.logo {
-        width:30%; 
-        min-height:200px;
-    }
-    img.content {
-        width:100%;
-        height:auto;
-    }
-    .content-title {
-        font-size:large;
-    }
-    .navbar li {
-        font-size:12px;
-    }
-    .navbar ul {
-        width:100%;
-    }
-}
-@media (max-width:550px) {
+/*  <= 750px    */
+@media (max-width:750px) {
     .left-div .selection {
-        font-size:smaller;
-    }
-}
-@media (max-width: 475px) {
-    .left-div .selection {
-        font-size:smaller;
+        font-size: small;
+        /* border-bottom:1px solid white; */
     }
     .left-div {
-        width:25%;
+        width: 25%;
     }
-    img.logo {
-        width:50vw;
-        height:18vw;
-        transform:translate(8px, 0px); 
+    #defaultContentIMG {
+        width: 45vw;
+        height: 45vw;
     }
 }
-
+/*  <= 600px    */
+@media (max-width: 600px) {
+    img.logo {
+        width: 30%;
+        min-height: 200px;
+    }
+    img.content {
+        width: 100%;
+        height: auto;
+    }
+    .content-title {
+        font-size: large;
+    }
+    .navbar li {
+        font-size: 12px;
+    }
+    .navbar ul {
+        width: 100%;
+    }
+    #defaultContentIMG {
+        width: 50vw;
+        height: 50vw;
+    }
+}
+/*  <= 550px    */ 
+@media (max-width:550px) {
+    .left-div .selection {
+        font-size: smaller;
+    }
+}
+/*  <= 475px    */
+@media (max-width: 475px) {
+    .left-div .selection {
+        font-size: smaller;
+    }
+    .left-div {
+        width: 25%;
+    }
+    img.logo {
+        width: 50vw;
+        height: 18vw;
+        transform: translate(8px, 0px);
+    }
+    #defaultContentIMG {
+        width: 55vw;
+        height: 55vw;
+    }
+}
