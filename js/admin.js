@@ -1,6 +1,6 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js';
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-auth.js";
-import { getDatabase, ref, get, update } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js";
+import { getDatabase, ref, get, update, remove } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js";
 
 const app = initializeApp({
 	apiKey: 'AIzaSyBUjgwLzmnqM7O3LSfSiIIQQogIvu8XBZc',
@@ -32,9 +32,14 @@ const updateCommitteeData = async function (committee_id, data) {
 	return await update(ref(db, `homepage/committees/${committee_id}`), data);
 };
 
+const removeCommittee = async function (committee_id) {
+	return await remove(ref(db, `homepage/committees/${committee_id}`));
+};
+
 const renderHomepageContent = function (data = []) {
-	document.querySelector('#admin-div').classList.add('hidden');
-	document.querySelector('#panel-container').classList.remove('hidden');
+	document.querySelector('#admin-div').classList.add('hidden');	//hide login form
+	document.querySelector('#panel-container').classList.remove('hidden');	//make panel visible
+	document.querySelector('#panel-container').innerHTML = ''; //clear htmlcontent
 	/*
 	const title_parent = document.createElement('div');
 	title.classList.add('committee-title');
@@ -42,20 +47,50 @@ const renderHomepageContent = function (data = []) {
 	title.appendChild()
 	document.createElement('div')
 	*/
-	const card = ({name, description}) => `
-      <div>
+	const card = ({id, name, description}) => `
+      <div id="${id}">
         <div class="committee-title">
-          <input type="text" placeholder="${name}" />
+          <input type="text" value="${name}" />
         </div>
         <div class="committee-description">
-          <textarea rows="5" cols="25" placeholder="${description}"></textarea>
+          <textarea rows="5" cols="25">${description}</textarea>
         </div>
         <div class="delete"><button>Delete</button></div>
         <div class="save"><button>Save</button></div>
       </div>
 	`;
-	for(const item of data)
-		document.getElementById('panel-container').innerHTML += card(item);
+	for(const i in data)
+		document.getElementById('panel-container').innerHTML += card({
+			id: i,
+			...data[i],
+		});
+
+	document.querySelectorAll('.save').forEach(el => el.addEventListener('click', async function (e) {
+		try {
+			await updateCommitteeData(e.target.parentElement.parentElement.id, {
+				name: e.target.parentElement.parentElement.querySelector('.committee-title').querySelector('input').value,
+				description: e.target.parentElement.parentElement.querySelector('.committee-description').querySelector('textarea').value,
+			});
+			alert('Committee updated successfully');
+			//rerender page
+			renderHomepageContent(await getHomepageContent());
+		} catch (e) {
+			console.log(e);
+			alert('Error saving committee');
+		}
+	}));
+
+	document.querySelectorAll('.delete').forEach(el => el.addEventListener('click', async function (e) {
+		try {
+			await removeCommittee(e.target.parentElement.parentElement.id);
+			alert('Committee deleted successfully');
+			//rerender page
+			renderHomepageContent(await getHomepageContent());
+		} catch (e) {
+			console.log(e);
+			alert('Error deleting committee');
+		}
+	}));
 };
 
 document.querySelector('#admin-form').addEventListener('submit', login);
