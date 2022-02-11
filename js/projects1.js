@@ -8,6 +8,9 @@ const committees = [
 
 
 
+
+
+
 let slideIndex = 0;
 showSlides();
 
