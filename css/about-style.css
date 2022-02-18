@@ -1,12 +1,4 @@
-#navbar {
-  text-align: center;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  z-index: 999;
-  background-color: rgb(190, 61, 230);
-}
+
 
 #bar {
   text-align: center;
@@ -54,6 +46,7 @@
 }
 
 #container {
+  width: 300px;
   max-width: 300px;
   min-width: 250px;
   margin: 5px 25px;
@@ -76,16 +69,28 @@
 .name {
   font-size: 24px;
   font-weight: 600;
-
+  text-align: center;
   margin-top: 10px;
+}
+
+
+.name span{
+  font-size: 22px;
 }
 
 .card__details p {
   font-size: 14px;
   color: #f9fafc;
   line-height: 150%;
+  text-align: center;
 }
 
 .card__details {
   padding: 16px 8px 8px 8px;
+}
+
+@media screen and (max-width: 480px) {
+  .mission p{
+    font-size: 2.2rem;
+  }
 }
