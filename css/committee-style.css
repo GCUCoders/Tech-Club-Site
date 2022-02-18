@@ -1,10 +1,5 @@
 /* CSS for entire page */
 
-body {
-    background-color:#522398; 
-    /* background-color: black; */
-}
-
 /* footer styling */ 
 footer {
     background-color:black; 
@@ -76,7 +71,7 @@ footer br {
     text-align:center;
     font-size:x-large;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display:none;
+    /* display:none; */
     /* background-color: #774BAA; */
     /* height:30px;  */
 }
