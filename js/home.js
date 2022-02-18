@@ -44,15 +44,17 @@ window.onload = async function() {
     writeThis();
 
     function writeThis() {
-        document.querySelector("#home-title").textContent = data[page_index].name;
-        document.querySelector("#home-text").textContent = data[page_index].description;
+        //modify buttons before text to prevent user from spamming them
         document.querySelector("#home-backward-button").style.visibility = "visible";
         document.querySelector("#home-forward-button").style.visibility = "visible";
+
         if(page_index === 0) 
             document.querySelector("#home-backward-button").style.visibility = "hidden";
         
         if(page_index === data.length - 1) 
             document.querySelector("#home-forward-button").style.visibility = "hidden";
-        
+
+        document.querySelector("#home-title").textContent = data[page_index].name;
+        document.querySelector("#home-text").textContent = data[page_index].description;        
     }
 };
