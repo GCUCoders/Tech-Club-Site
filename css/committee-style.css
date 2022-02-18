@@ -1,5 +1,9 @@
 /* CSS for entire page */
 
+body {
+    background-color:#522398; 
+    /* background-color: black; */
+}
 /* footer styling */ 
 footer {
     background-color:black; 
@@ -7,6 +11,10 @@ footer {
     text-align:center; 
     padding: 20px; 
 }
+footer br {
+    display:none;
+}
+
 
 /* main div styling */
 .main-div {
@@ -34,16 +42,15 @@ footer {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     /* background-color: #522398;   */
 }
-
 .left-div .selection {
     border-bottom: 1px solid white;
 }
-
 .left-div .side-menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 
 /* right column styling */
 .right-div {
@@ -215,5 +222,11 @@ p big {
     #defaultContentIMG {
         width: 55vw;
         height: 55vw;
+    }
+    footer span {
+        display: none;
+    }
+    footer br {
+        display: block;
     }
 }
