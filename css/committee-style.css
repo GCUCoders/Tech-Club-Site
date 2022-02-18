@@ -76,7 +76,7 @@ footer br {
     text-align:center;
     font-size:x-large;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* display:none; */
+    display:none;
     /* background-color: #774BAA; */
     /* height:30px;  */
 }

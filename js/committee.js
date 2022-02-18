@@ -152,7 +152,7 @@ function showHardware()
     // create image element 
     const img = document.createElement('img');
     img.classList.add('content');
-    img.src = 'images/hardware-committee-img.png';
+    img.src = 'https://www.lifewire.com/thmb/KW1l5x2qWzGVHf5Fl7yAD8OwwcQ=/3000x2000/filters:fill(auto,1)/computer-hardware-2625895-final-v1-8c909b8a32434e26a225db2314823bb2.jpg';
 
     // create description element
     const description = document.createElement('div');
