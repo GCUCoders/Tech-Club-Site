@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Admin Login</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/navbar-style.css" />
+    <link rel="stylesheet" href="css/admin-style.css" />
+    <link rel="stylesheet" href="css/admin-panel-style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Admin Login</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/navbar-style.css" />
-  <link rel="stylesheet" href="css/admin-style.css" />
-  <link rel="stylesheet" href="css/admin-panel-style.css" />
-</head>
+  <body class="body">
+    <nav class="navbar">
+      <a href="index.html"
+        ><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo"
+      /></a>
+      <a href="#" class="toggle-button" style="margin-top: 20px">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li class="dropdown">
+            <a href="committee.html">Committees</a>
+          </li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="merch.html">Merch</a></li>
+          <li style="margin-right: 10px">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-<body class="body">
-  <nav class="navbar">
-    <a href="index.html"><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo" /></a>
-    <a href="#" class="toggle-button" style="margin-top: 20px">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a>
-    <div class="navbar-links">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="calendar.html">Calendar</a></li>
-        <li class="dropdown">
-          <a href="committee.html">Committees</a>
-        </li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="merch.html">Merch</a></li>
-        <li style="margin-right: 10px">
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
+    <div id="admin-div">
+      <form id="admin-form">
+        <label style="font-weight: bold; font-size: 2rem; color: white"
+          >ADMIN LOGIN</label
+        ><br />
+        <input type="text" id="email" placeholder="Email" required /> <br />
+
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          required
+        /><br /><br />
+        <button id="admin-button" type="submit">Login</button>
+      </form>
     </div>
-  </nav>
 
-  <div id="admin-div">
-    <form id="admin-form">
-      <label style="font-weight: bold; font-size: 2rem; color: white">ADMIN LOGIN</label><br />
-      <input type="text" id="email" placeholder="Email" required /> <br />
+    <div id="panel-container" class="hidden"></div>
 
-      <input type="password" id="password" placeholder="Password" required /><br /><br />
-      <button id="admin-button" type="submit">Login</button>
-    </form>
-  </div>
-
-  <div id="panel-container" class="hidden"></div>
-
-  <script src="js/mobile-toggle.js" async defer></script>
-  <script type="module" src="js/admin.js"></script>
-</body>
-
+    <script src="js/mobile-toggle.js" async defer></script>
+    <script type="module" src="js/admin.js"></script>
+  </body>
 </html>
