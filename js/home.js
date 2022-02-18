@@ -1,3 +1,4 @@
+import { get, ref } from 'https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js';
 import { db } from './util.js';
 
 let tw_index = 0;
@@ -19,56 +20,39 @@ const getCommitteeData = async function () {
 
 // Different Slides
 window.onload = async function() {
+    // Frontend stuff to be executed right away
+    typeWriter();
+
+
     // Get data from firebase
     const data = await getCommitteeData();
     
+    // code that handles the turning of pages
+    let page_index = 0;
+
+    document.querySelector("#home-backward-button").addEventListener('click', () => {
+        page_index--;
+        writeThis();
+    });
+
+    document.querySelector("#home-forward-button").addEventListener('click', () => {
+        page_index++;
+        writeThis();
+    });
+
+    // actually writes the initial text onto the screen
+    writeThis();
+
+    function writeThis() {
+        document.querySelector("#home-title").textContent = data[page_index].name;
+        document.querySelector("#home-text").textContent = data[page_index].description;
+        document.querySelector("#home-backward-button").style.visibility = "visible";
+        document.querySelector("#home-forward-button").style.visibility = "visible";
+        if(page_index === 0) 
+            document.querySelector("#home-backward-button").style.visibility = "hidden";
+        
+        if(page_index === data.length - 1) 
+            document.querySelector("#home-forward-button").style.visibility = "hidden";
+        
+    }
 };
-
-// code that handles the turning of pages
-
-let page_index = 1;
-
-function forward() {
-    page_index = page_index + 1;
-    writeThis();
-}
-
-function backward() {
-    page_index = page_index - 1;
-    writeThis();
-}
-// actually writes the text onto the screen
-document.getElementById("home-title").textContent = cyber;
-document.getElementById("home-text").textContent = cyber_text;
-document.getElementById("home-backward-button").style.visibility = "hidden";
-
-function writeThis() {
-    if (page_index == 0) {
-        document.getElementById("home-title").textContent = cyber;
-        document.getElementById("home-text").textContent = cyber_text;
-        document.getElementById("home-backward-button").style.visibility = "hidden";
-        document.getElementById("home-forward-button").style.visibility = "visible";
-    }
-    if (page_index == 1) {
-        document.getElementById("home-title").textContent = webdev;
-        document.getElementById("home-text").textContent = webdev_text;
-        document.getElementById("home-backward-button").style.visibility =
-            "visible";
-    }
-    if (page_index == 2) {
-        document.getElementById("home-title").textContent = embedded;
-        document.getElementById("home-text").textContent = embedded_text;
-        document.getElementById("home-forward-button").style.visibility = "visible";
-    }
-
-    if (page_index == 3) {
-        document.getElementById("home-title").textContent = hardware;
-        document.getElementById("home-text").textContent = hardware_text;
-        document.getElementById("home-forward-button").style.visibility = "visible";
-    }
-    if (page_index == 4) {
-        document.getElementById("home-title").textContent = girlswc;
-        document.getElementById("home-text").textContent = girlswc_text;
-        document.getElementById("home-forward-button").style.visibility = "hidden";
-    }
-}

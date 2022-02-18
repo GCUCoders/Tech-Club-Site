@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/navbar-style.css">
 </head>
 
-<body class="body" id="home-body" onload="typeWriter(); backward()">
+<body class="body" id="home-body">
 
     <nav class="navbar">
         <a href="index.html"><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo"></a>
@@ -55,8 +55,8 @@
             </div>
             <div>
                 <img id="home-announcement-pic" src="images/hardware-stock.jpg" alt="example picture">
-                <button class="home-script-buttons" id="home-backward-button" onclick="backward()">Previous</button>
-                <button class="home-script-buttons" id="home-forward-button" onclick="forward()">Forward</button>
+                <button class="home-script-buttons" id="home-backward-button">Previous</button>
+                <button class="home-script-buttons" id="home-forward-button">Forward</button>
 
 
             </div>
@@ -64,7 +64,7 @@
 
     </div>
     <script src="js/mobile-toggle.js"></script>
-    <script src="js/home.js" async defer></script>
+    <script src="js/home.js" type="module"></script>
 </body>
 
 </html>
