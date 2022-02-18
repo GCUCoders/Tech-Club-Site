@@ -1,3 +1,5 @@
+import { db } from './util.js';
+
 let tw_index = 0;
 let homepage_txt = "Welcome to the Tech Club!"; /* The text */
 let speed = 60; /* The speed/duration of the effect in milliseconds */
@@ -11,32 +13,28 @@ function typeWriter() {
     }
 }
 
+const getCommitteeData = async function () {
+    return (await get(ref(db, 'homepage/committees'))).val();
+};
+
 // Different Slides
+window.onload = async function() {
+    // Get data from firebase
+    const data = await getCommitteeData();
+    
+};
 
-let cyber = "Cyber Security";
-let webdev = "Web Development";
-let embedded = "Embedded Development";
-let hardware = "Hardware";
-let girlswc = "Girls Who Code";
-
-let cyber_text = "Cyber Security is doing things.";
-let webdev_text = "Web Dev is doing things.";
-let embedded_text = "Embedded Dev is doing something.";
-let hardware_text = "Hardware is doing something.";
-let girlswc_text = "Girls Who Code is doing something.";
 // code that handles the turning of pages
 
 let page_index = 1;
 
 function forward() {
     page_index = page_index + 1;
-
     writeThis();
 }
 
 function backward() {
     page_index = page_index - 1;
-
     writeThis();
 }
 // actually writes the text onto the screen
