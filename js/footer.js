@@ -66,3 +66,7 @@ class Footer extends LitElement{
 }
 
 customElements.define('footer-ss', Footer);
+
+/*
+Author : Alexander 'admeeer' Peltier
+*/
