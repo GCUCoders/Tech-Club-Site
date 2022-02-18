@@ -308,8 +308,10 @@ body{
 }
 
 .information{
-  width: 700px;
-  margin-left: 50px;
+  width: 40%;
+  margin-left: 35%;
+  color: #fff;
+ 
 }
 
 .media-information{
