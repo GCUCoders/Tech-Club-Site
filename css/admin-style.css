@@ -1,0 +1,9 @@
+#admin-div {
+  background-color: black;
+  padding: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 1rem;
+}
