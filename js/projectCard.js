@@ -42,7 +42,7 @@ class ProjectCard extends LitElement{
 
     static get properties(){
         return{
-            name: { type: String },
+            name: { type: String},
             url: { type: String},
             img: { type: String}
         };
