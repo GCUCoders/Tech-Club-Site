@@ -1,5 +1,9 @@
 /* CSS for entire page */
 
+body {
+    background-color:#522398; 
+    /* background-color: black; */
+}
 /* footer styling */ 
 footer {
     background-color:black; 
