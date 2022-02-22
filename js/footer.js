@@ -1,6 +1,16 @@
 import { LitElement, html, css } from 'https://cdn.skypack.dev/pin/lit@v2.2.0-SekDu8dt49Zcuxzc30cK/mode=imports,min/optimized/lit.js';
 
 class Footer extends LitElement {
+    imgs = [
+        {
+            href: 'https://github.com/GCUCoders/Tech-Club-Site',
+            src: 'images/github-logo-alt.png',
+        },
+        {
+            href: 'https://discord.gg/6bmQyKdjzs',
+            src: 'images/discord-brands.svg',
+        },
+    ];
 	// defined css styling
 	static get styles() {
 		return css`
@@ -36,15 +46,16 @@ class Footer extends LitElement {
 	}
 
 	render() {
+        const { imgs } = this;
 		return html`<footer>
 			<div id="footer-div">
 				<p>© Grand Canyon University</p>
 				<p>
-					<a href="${this.imgsLinks[0]}" target="_blank">
-                        <img src="${this.imgs[0]}" class="footer-images"/>
+					<a href="${imgs[0].href}" target="_blank">
+                        <img src="${imgs[0].src}" class="footer-images"/>
                     </a>
-					<a href="${this.imgsLinks[1]}" target="_blank">
-                        <img src="${this.imgs[1]}" class="footer-images"/>
+					<a href="${imgs[1].href}" target="_blank">
+                        <img src="${imgs[1].src}" class="footer-images"/>
                     </a>
 				</p>
 			</div>
@@ -53,15 +64,6 @@ class Footer extends LitElement {
 
 	constructor() {
 		super();
-		this.imgs = [];
-		this.imgsLinks = [];
-	}
-
-	static get properties() {
-		return {
-			imgs: { type: Array },
-			imgsLinks: { type: Array },
-		};
 	}
 }
 
