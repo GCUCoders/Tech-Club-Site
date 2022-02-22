@@ -1,0 +1,36 @@
+/* Code author: Alexander 'admeeer' Peltier */
+
+/* set colors and width, position */
+footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    background-color: #470a68;
+}
+
+/* flexbox fuckery, works as intended */
+.footer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    height: 150px;
+    flex-direction: column;
+}
+
+/* will most likely be changed later, this also might be default and therefore redundant. */
+#p1 {
+    font-family: sans-serif;
+    color:white; 
+}
+
+/* Our image is a .svg file and is originally black. We convert the hexadecimal color we want (in this case, white) to an applicable CSS filter */ 
+.footer-images {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(102deg) brightness(103%) contrast(101%);
+    width:  77%;
+    height: 77%;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+
+
