@@ -45,7 +45,7 @@ function showWebDev()
 
     // create description element
     const description = document.createElement('div'); 
-    description.innerHTML = $('#info-webdevelopment').text(); 
+    description.innerHTML = document.querySelector('#info-webdevelopment').textContent; 
 
     // add elements into content node 
     body.replaceChildren(img, document.createElement('br'), document.createElement('br'), description); 
@@ -73,7 +73,7 @@ function showEmbedded()
 
     // create description element
     const description = document.createElement('div');
-    description.innerHTML = $("#info-embeddeddevelopment").text();
+    description.innerHTML = document.querySelector("#info-embeddeddevelopment").textContent;
 
     // add elements into content node 
     body.replaceChildren(img, document.createElement('br'), document.createElement('br'), description);
@@ -101,7 +101,7 @@ function showCyber()
 
     // create description element
     const description = document.createElement('div');
-    description.innerHTML = $("#info-cybersecurity").text();
+    description.innerHTML = document.querySelector("#info-cybersecurity").textContent;
 
     // add elements into content node 
     body.replaceChildren(img, document.createElement('br'), document.createElement('br'), description);
@@ -129,7 +129,7 @@ function showGWC()
 
     // create description element
     const description = document.createElement('div');
-    description.innerHTML = $("#info-girlswhocode").text() + '<br>Check out their website at:  <a style="color:white; font-size:bolder;" href="https://girlswhocode.com/" target="_blank">www.girlswhocode.com</a></div>';
+    description.innerHTML = document.querySelector("#info-girlswhocode").textContent + '<br>Check out their website at:  <a style="color:white; font-size:bolder;" href="https://girlswhocode.com/" target="_blank">www.girlswhocode.com</a></div>';
 
     // add elements into content node 
     body.replaceChildren(img, document.createElement('br'), document.createElement('br'), description);
@@ -156,7 +156,7 @@ function showHardware()
 
     // create description element
     const description = document.createElement('div');
-    description.innerHTML = $("#info-hardware").text();
+    description.innerHTML = document.querySelector("#info-hardware").textContent;
 
     // add elements into content node 
     body.replaceChildren(img, document.createElement('br'), document.createElement('br'), description);
