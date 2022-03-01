@@ -12,15 +12,15 @@ const login = async function (e) {
 };
 
 const getHomepageContent = async function () {
-	return (await get(ref(db, 'homepage/committees'))).val();
+	return (await get(ref(db, 'committees'))).val();
 };
 
 const updateCommitteeData = async function (committee_id, data) {
-	return await update(ref(db, `homepage/committees/${committee_id}`), data);
+	return await update(ref(db, `committees/${committee_id}`), data);
 };
 
 const removeCommittee = async function (committee_id) {
-	return await remove(ref(db, `homepage/committees/${committee_id}`));
+	return await remove(ref(db, `committees/${committee_id}`));
 };
 
 const renderHomepageContent = function (data = []) {

@@ -15,7 +15,7 @@ function typeWriter() {
 }
 
 const getCommitteeData = async function () {
-    return (await get(ref(db, 'homepage/committees'))).val();
+    return (await get(ref(db, 'committees'))).val();
 };
 
 // Different Slides
@@ -55,6 +55,6 @@ window.onload = async function() {
             document.querySelector("#home-forward-button").style.visibility = "hidden";
 
         document.querySelector("#home-title").textContent = data[page_index].name;
-        document.querySelector("#home-text").textContent = data[page_index].description;        
+        document.querySelector("#home-text").textContent = data[page_index].home_text;        
     }
 };
