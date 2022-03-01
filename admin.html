@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/navbar-style.css" />
     <link rel="stylesheet" href="css/admin-style.css" />
-    <link rel="stylesheet" href="css/admin-panel-style.css" />
   </head>
 
   <body class="body">
@@ -55,7 +54,46 @@
         <button id="admin-button" type="submit">Login</button>
       </form>
     </div>
+    <div class="edit-form" id="edit-form-div">
+      <form id="editForm">
+        <label>Committee Name</label><br />
+        <input
+          type="text"
+          placeholder="Committee's name"
+          id="edit-committee-name"
+        /><br />
+        <label>Homepage Text </label><br />
+        <textarea
+          rows="5"
+          cols="25"
+          form="editForm"
+          placeholder="Appears on homepage"
+          id="edit-homepage-text"
+        ></textarea>
+        <br />
+        <label>Projects Text </label><br />
+        <textarea
+          rows="5"
+          cols="25"
+          form="editForm"
+          placeholder="Appears on projects page"
+          id="edit-projects-text"
+        ></textarea>
+        <br />
+        <label>Committees Text </label><br />
+        <textarea
+          rows="5"
+          cols="25"
+          form="editForm"
+          placeholder="Appears on committees page"
+          id="edit-committees-text"
+        ></textarea>
+        <br />
 
+        <button id="back-edit">Back</button>
+        <input type="submit" value="Save" id="save-edit" />
+      </form>
+    </div>
     <div id="panel-container" class="hidden"></div>
 
     <script src="js/mobile-toggle.js" async defer></script>

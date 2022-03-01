@@ -57,6 +57,9 @@
 .committee-description > textarea {
   resize: none;
 }
+textarea {
+  resize: none;
+}
 .button {
   width: 50%;
   margin: 10px auto;
@@ -67,6 +70,11 @@
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
+}
+.edit-form {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
 }
 
 .hidden {
