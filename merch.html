@@ -1,21 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
+<!-- start of head -->
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Merch Page</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/merch-style.css">
-    <link rel="stylesheet" href="css/navbar-style.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- tab title -->
+    <title>Merch Page</title>
+
+    <!-- Link to Navbar CSS -->
+    <link rel="stylesheet" href="css/navbar-style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+        body {
+            background: black;
+            
+        }
+
+        footer {
+            color: white;
+            text-align: center;
+            border-top:1.5px solid white;
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+
+        #titleBR {
+            display: none;
+        }
+
+        .main-container {
+            display:flex;
+            flex-wrap:nowrap; 
+            color: white;  
+            font-family: 'Roboto Mono', monospace; 
+            /* padding-bottom: 60px; */
+        }
+
+        #filters {
+            /* background-color:#774baa; */
+            width: 15%;
+            text-align: center;
+            padding: 10px 0px 0px 0px;
+            font-family:inherit;
+            border-top: 1.5px solid white;
+            border-right: 1.5px solid white;
+            height:100;
+            /* border-bottom: 1.5px solid white; */
+        }
+        #filters h2 {
+            margin-top: 0;
+            /* padding-left:18%; */
+            font-family: inherit;
+            color:white;
+            margin-bottom: 0;
+            font-size: large;
+        }
+        #filters details {
+            padding: 5px 0px 5px 0px; 
+            line-height: 2;
+            font-family: 'Roboto Mono', monospace;
+        }
+        #filters summary {
+            /* list-style-type:disc; */
+            text-align: left;
+            padding-left: 10px;
+            /* margin: 0; */
+            font-family:inherit;
+        }
+        #filters button {
+            font-size:small;
+            padding:8px; 
+            margin-top:10px;
+            color:white;
+            background:black;
+            border-radius: 5px; 
+            /* font-family:'Roboto Mono', monospace; */
+            
+        }
+        #filters button:hover {
+            color:black;
+            background-color: white;
+            /* font-family:'Roboto Mono', monospace; */
+        }
+
+        #products {
+            width: 85%; 
+            text-align:center;
+            /* align-items: center; */
+            padding:10px 15px;;
+            border-top: 1.5px solid white;
+            font-family:inherit;
+        }
+        #products h2 span {
+            border-top:2px dashed #774baa; 
+            border-bottom:2px dashed #774baa; 
+            font-family:'Roboto Mono', monospace;
+            font-size: 2em;
+        }
+        #products div {
+            margin: 15px;
+        }
+        #products img {
+            width: 18vw;
+            height: 18vw;
+            border-radius: 8px;
+            opacity: 0.7;
+        }
+        #products img:hover {
+            opacity: 1;
+        }
+
+        #products-flex {
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @media (max-width: 1300px)
+        {
+            #products img {
+                width:35vw;
+                height:35vw;
+            }
+            #products h2 span {
+                font-size: 1.25em;
+            }
+            #filters {
+                font-size: small;
+            }
+        }
+        @media (max-width:700px) 
+        {
+            #products img {
+                opacity: 1;
+            }
+            #titleBR {
+                display:block;
+            }
+            #filters {
+                width:25%; 
+                font-size: small;
+            }
+            #filters h2 {
+                font-size: small;
+            }
+            #products img {
+                width:100%;
+                height:auto;
+            }
+            #filters button {
+                font-size: x-small;
+                padding:4px;
+                border-radius: 3px;
+            }
+        }
+        @media (max-width: 600px) {
+            footer {
+                padding-top:5%;
+                padding-bottom: 5%; 
+            }
+        }
+        @media (max-width: 420px) {
+            #filters {
+                font-size: x-small;
+            }
+            #products h2 span {
+                font-size: large;
+            }
+        }
+    </style>
+
+
+</head>
+<!-- end of head -->
+
+
+<!-- start of body -->
 <body>
 
+    <!-- GCU Navbar -->
     <nav class="navbar">
         <a href="index.html"><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo"></a>
-        <a href="#" class="toggle-button" style="margin-top: 20px;">
+        <a href="" class="toggle-button" style="margin-top: 20px;">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -25,24 +195,129 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="calendar.html">Calendar</a></li>
-                <li class="dropdown">
-                    <a href="committee.html">Committees</a>
-
-                </li>
+                <li class="dropdown"><a href="committee.html">Committees</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="merch.html">Merch</a></li>
                 <li style="margin-right: 10px;"><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <script src="js/mobile-toggle.js"></script>
-    <div id="merch-temp">
-        <div id="merch-temp-card">
-            <img src="images/TCLBlack-bg.png" class="merch-temp-img" alt="Logo">
-            <h1>Under Construction</h1>
-            <p>We are hard at work on this page</p>
-            <br/>
-        </div>
+
+
+    <!-- -->
+    <div class="main-container">
+
+        <!-- left filters container -->
+        <section id="filters" onchange="changeBoxSizes()">
+            <h2>Filters</h2><hr color="white">
+
+            <details>
+                <summary>Size</summary>
+                i
+            </details>
+            <details>
+                <summary>Color</summary>
+                &lt;3
+            </details>
+            <details>
+                <summary>Price</summary>
+                U
+            </details>
+            <details>
+                <summary>Gender</summary>
+                !!!
+            </details>
+
+            <hr color="white">
+
+            <button onclick="alert('This button is not yet functional.');">Apply Filters</button>
+        </section>
+
+        <!-- right content container -->
+        <section id="products">
+
+            <h2 style="">
+                <span style="">GCU Tech Club <br id="titleBR">Online Store</span>
+            </h2>
+
+            <section id="products-flex">
+                <div>
+                    <img src="images/TC_T-shirt_basic1.png">
+                </div>
+                <div>
+                    <img src="images/TC_T-shirt_basic2.png">
+                </div>
+                <div>
+                    <img src="images/TC_T-shirt_havocs1.png">
+                </div>
+                <div>
+                    <img src="images/TC_T-shirt_havocs2.png">
+                </div>
+                <div>
+                    <img src="https://cdn11.bigcommerce.com/s-hkftlrohcg/images/stencil/300x300/products/6514/28035/College-of-Science-Engineering-Technology-Magnet__S_1__56944.1627073264.jpg?c=2">
+                </div>
+                <div>
+                    <img src="https://cdn11.bigcommerce.com/s-hkftlrohcg/images/stencil/300x300/products/6087/28028/College-of-Science-Engineering-Technology-GCU-Tee__S_1__57050.1627066737.jpg?c=2">
+                </div>
+                <div>
+                    <img src="https://cdn11.bigcommerce.com/s-hkftlrohcg/images/stencil/300x300/products/7831/28030/College-of-Science-Engineering-Technology-GCU-Long-Sleeve-Tee__S_1__53293.1627071657.jpg?c=2">
+                </div>
+                <div>
+                    <img src="https://cdn11.bigcommerce.com/s-hkftlrohcg/images/stencil/300x300/products/8437/31705/Strideline-Purple-GCU-Thunder-Socks__S_1__47211.1641505646.jpg?c=2">
+                </div>
+                <div>
+                    <img src="https://cdn11.bigcommerce.com/s-hkftlrohcg/images/stencil/300x300/products/5966/30854/College-of-Science-Engineering-Technology-Sticker__S_1__02115.1637272788.jpg?c=2">
+                </div>
+                <div>
+                    <img src="https://cdn11.bigcommerce.com/s-hkftlrohcg/images/stencil/300x300/products/8635/32280/Logitech-M325-Wireless-Mouse-Blue__S_1__25106.1643755505.jpg?c=2">
+                </div>
+                <div>
+                    <img src="https://cdn11.bigcommerce.com/s-hkftlrohcg/images/stencil/300x300/products/8400/32061/Logo-Brands-Grand-Canyon-University-Drawstring-Backpack__S_1__29331.1643146249.jpg?c=2">
+                </div>
+                <div>
+                    <img src="https://cdn11.bigcommerce.com/s-hkftlrohcg/images/stencil/300x300/products/5604/30528/Running-Lope-GCU-Purple-White-Paint-Splatter-Notebook__S_1__19688.1636388363.jpg?c=2">
+                </div>
+            </section>
+            
+        </section>
+
     </div>
+
+    <footer>
+        Grand Canyon University 2022
+    </footer>
+    <script src="js/mobile-toggle.js"></script>
+
+
+
+
+
+    <!-- javascript -->
+    <script>
+
+        function changeBoxSizes() 
+        {
+            // get browser height and width and print to console
+            var browserHeight = Math.floor(window.innerHeight)
+            var browserWidth = Math.floor(window.innerWidth)
+            console.log(browserHeight + "," + browserWidth)
+    
+            // make filter section full browser height
+            var filterBox = document.getElementById('filters')
+            filterBox.style.height = (browserHeight-85)+'px'
+        }
+
+                // on page load function
+        window.onload = function()
+        {
+            // changeBoxSizes()
+        }
+
+
+    </script>
+
+
 </body>
+<!-- end of body -->
+
 </html>

@@ -3,46 +3,66 @@
 <!DOCTYPE html>
 <html>
 
+<!-- start of head -->
 <head>
-    <link rel="stylesheet" href="css/merch-style.css">
-    <link rel="stylesheet" href="css/navbar-style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merch Page</title>
-</head>
 
+    <!-- tab title -->
+    <title>Merch Page</title>
+
+    <!-- css links -->
+    <link rel="stylesheet" href="css/merch-style.css">
+    <link rel="stylesheet" href="css/navbar-style.css">
+
+</head>
+<!-- end of head -->
+
+
+<!-- start of body -->
 <body class="body">
 
+    <!-- start of navbar -->
     <nav class="navbar">
+        <!-- navbar logo -->
         <a href="index.html"><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo"></a>
+
         <a href="#" class="toggle-button" style="margin-top: 20px;">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </a>
+
+        <!-- navbar links -->
         <div class="navbar-links">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="calendar.html">Calendar</a></li>
-                <li class="dropdown">
-                    <a href="committee.html">Committees</a>
-
-                </li>
+                <li class="dropdown"><a href="committee.html">Committees</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="merch.html">Merch</a></li>
                 <li style="margin-right: 10px;"><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
+    <!-- end of navbar -->
 
-</body>
 
+
+
+<!-- start of body -->
 <body id="merch-body">
+
+
+    <!-- Filters title -->
     <div id="merch-div1">
         <h1 class="merch-h1">Filters</h1>
     </div>
+
+
+    <!-- page changing bar -->
     <div id="merch-div2">
         <div style="margin-top: 29px; margin-left: 3px;">
             <a href="#" class="merch-a">&lsaquo;</a>
@@ -55,6 +75,9 @@
             <a href="#" class="merch-a">&rsaquo;</a>
         </div>
     </div>
+
+
+    <!-- filter checkboxes -->
     <div id="merch-div3">
         <div id="merch-align">
             <div id="merch-pad">
@@ -104,6 +127,9 @@
         </div>
         <a href="#" class="merch-F">Apply Filters</a>
     </div>
+
+
+    <!-- product images container -->
     <div id="merch-div4">
         <div id="pic-div">
             <img src="images/TCLBlack-bg.png" class="merch-product" alt="Product 1">
@@ -130,8 +156,13 @@
             <a href="#">Product 1<br>$25</a>
         </div>
     </div>
+
+    <!-- link to javascript -->
     <script src="js/merch_data.js"></script>
     <script src="js/mobile-toggle.js"></script>
+
+
 </body>
+<!-- end of body -->
 
 </html>
