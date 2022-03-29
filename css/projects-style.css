@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url("navbar-style.css");
+
 
 .home{
   position: relative;
@@ -162,10 +164,10 @@
   transition: 0.8s;
 }
 
-/* .logo, nav{
+.logo{
   transform: translateY(-70px);
   transition: 0.8s;
-} */
+} 
       
 
 
@@ -250,6 +252,7 @@ body{
 
   width: 300px;
   height: 200px;
+  display: flex;
 }
 
 .part.image{
@@ -343,4 +346,9 @@ body{
 
 .sec-03{
   margin-bottom: 100px;
+}
+
+@media(max-width: 700px)
+{
+  
 }
