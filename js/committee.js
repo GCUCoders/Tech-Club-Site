@@ -1,4 +1,5 @@
 
+/* Array of all committee document item ID's.  */
 const committees = [
 	'web-dev',
 	'embedded',
@@ -7,116 +8,164 @@ const committees = [
 	'hardware',
 ]; 
 
-// Left div selection highlight function. 
+
+// Left div column (tab highlighting) function. 
 function highlightSelection(turnOn) 
 {
-    for(const committee of committees)
+    // which tab in the left column is currently selected
+    for (const committee of committees) 
     {
+        // turn on tab highlight
         if (committee == turnOn) {
             document.getElementById(turnOn).style.backgroundColor = '#A68AC8';
         }
-        else {
+        // turn off highlight
+        else {  
             document.getElementById(committee).style.backgroundColor = '#774BAA';
         }
     }
 } 
 
 
-function showWebDev(){
 
-    // Select Right Div content components. 
+/*          Web-Development Body Content function             */ 
+function showWebDev()
+{
+    // select content title and body elements
     const title = document.getElementById('content-title');
     const body = document.getElementById('content-body'); 
-
-    // Set the Content Title. 
+    
+    // set content title 
     title.innerText = 'Web Development Committee'; 
 
-    // create markup to write to page. 
-    let codeline = '<img class="content" src="images/img1.png"><br><br><div>' + 
-    $("#info-webdevelopment").text() + '</div><br>'; 
+    // create image element
+    const img = document.createElement('img'); 
+    img.classList.add('content'); 
+    img.src = 'images/webdev_customImg.png'; 
 
-    // write the markup. 
-    body.innerHTML = codeline;  
+    // create description element
+    const description = document.createElement('div'); 
+    description.innerHTML = document.querySelector('#info-webdevelopment').textContent; 
 
+    // add elements into content node 
+    body.replaceChildren(img, document.createElement('br'), document.createElement('br'), description); 
+
+    // highlight web-development tab 
     highlightSelection("web-dev"); 
 }
 
 
+
+/*          Embedded-Development Body Content function              */ 
 function showEmbedded() 
 {
-    // Select Right Div title and body sections. 
+    // select content title and body elements
     let body = document.getElementById('content-body'); 
     let title = document.getElementById('content-title'); 
     
-    // Set content title. 
+    // set content title 
     title.innerText = 'Embedded Development Committee'; 
 
-    // Write markup to the page. 
+    // create image element 
     const img = document.createElement('img');
     img.classList.add('content');
     img.src = 'https://www.ssla.co.uk/wp-content/uploads/2020/10/embedded-software-entwickler-entwicklung-tasks.png';
 
-    const desc = document.createElement('div');
-    desc.innerHTML = $("#info-embeddeddevelopment").text();
+    // create description element
+    const description = document.createElement('div');
+    description.innerHTML = document.querySelector("#info-embeddeddevelopment").textContent;
 
-    //body.innerHTML = '<img class="content" src="https://www.ssla.co.uk/wp-content/uploads/2020/10/embedded-software-entwickler-entwicklung-tasks.png"/><br><br><div>' + 
-    //$("#info-embeddeddevelopment").text() + '</div><br>'; 
-    body.replaceChildren(img, document.createElement('br'), document.createElement('br'), desc);
+    // add elements into content node 
+    body.replaceChildren(img, document.createElement('br'), document.createElement('br'), description);
 
+    // highlight embedded-development tab 
     highlightSelection("embedded");
 }
 
+
+
+/*          Cybersecurity Body Content function              */ 
 function showCyber()
 {
-    // Select content title and body elements. 
+    // select content title and body elements
     let title = document.getElementById('content-title'); 
     let body = document.getElementById('content-body'); 
 
-    // Set Content title. 
+    // set content title  
     title.innerText = 'Cybersecurity Committee'; 
 
-    // Create some markup to write to page. 
-    let codeline = '<img class="content" src="images/cyber_img.png"><br><br><div>' + $("#info-cybersecurity").text() + '</div><br>';
+    // create image element 
+    const img = document.createElement('img');
+    img.classList.add('content');
+    img.src = 'images/cyber_img.png';
 
-    // Write markup to the document. 
-    body.innerHTML = codeline; 
+    // create description element
+    const description = document.createElement('div');
+    description.innerHTML = document.querySelector("#info-cybersecurity").textContent;
 
+    // add elements into content node 
+    body.replaceChildren(img, document.createElement('br'), document.createElement('br'), description);
+
+    // highlight cybersecurity tab
     highlightSelection('cyber');
 }
 
-function showGWC(){
+
+
+/*          Girls-Who-Code Body Content function              */
+function showGWC()
+{
+    // select title and body elements
     let title = document.getElementById('content-title'); 
     let body = document.getElementById('content-body'); 
 
-    // Set the right div title. 
+    // set content title 
     title.innerText = 'Girls Who Code Committee'; 
 
-    // Create some markup to page. 
-    let codeline = '<img class="content"><br><br><div>' + 
-    $("#info-girlswhocode").text() + '</div><br>'; 
+    // create image element 
+    const img = document.createElement('img');
+    img.classList.add('content');
+    img.src = 'images/gwc_logo1.png';
 
-    // Write markup to the document. 
-    body.innerHTML = codeline; 
+    // create description element
+    const description = document.createElement('div');
+    description.innerHTML = document.querySelector("#info-girlswhocode").textContent + '<br>Check out their website at:  <a style="color:white; font-size:bolder;" href="https://girlswhocode.com/" target="_blank">www.girlswhocode.com</a></div>';
 
+    // add elements into content node 
+    body.replaceChildren(img, document.createElement('br'), document.createElement('br'), description);
+
+    // highlight girls who code tab 
     highlightSelection('girls-who-code');
 }
 
-function showHardware(){
+
+/*          Hardware Content function              */ 
+function showHardware()
+{
+    // select content title and body 
     let title = document.getElementById('content-title'); 
     let body = document.getElementById('content-body'); 
 
-    // Set the right div title. 
+    // Set the right column div title. 
     title.innerText = 'Hardware Committee'; 
 
-    // Create some markup.
-    let codeline = '<img class="content" src="https://www.lifewire.com/thmb/KW1l5x2qWzGVHf5Fl7yAD8OwwcQ=/3000x2000/filters:fill(auto,1)/computer-hardware-2625895-final-v1-8c909b8a32434e26a225db2314823bb2.jpg"><br><br><div>' + 
-    $("#info-hardware").text() + '</div><br>'; 
-    
-    // Write markup to page. 
-    body.innerHTML = codeline; 
+    // create image element 
+    const img = document.createElement('img');
+    img.classList.add('content');
+    img.src = 'images/hardware-committee-img.png';
 
+    // create description element
+    const description = document.createElement('div');
+    description.innerHTML = document.querySelector("#info-hardware").textContent;
+
+    // add elements into content node 
+    body.replaceChildren(img, document.createElement('br'), document.createElement('br'), description);
+
+    // highlight hardware tab 
     highlightSelection('hardware');
 }
 
-
-
+/*
+    Author: Shazeb Suhail
+    Date:   1/24/2022
+*/
