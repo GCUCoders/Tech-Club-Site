@@ -46,17 +46,17 @@
 }
 
 #container {
-  width: 400px;
-  max-width: 400px;
-  min-width: 350px;
-  margin: 15px 25px;
+  width: 200px;
+  max-width: 200px;
+  min-width: 250px;
+  margin: 10px 20px;
   margin-top: 10vh;
 }
 
 #container img {
   width: 100%;
   border-radius: 12px;
-  height: 350px;
+  height: 200px;
   object-fit: cover;
 }
 
