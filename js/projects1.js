@@ -35,7 +35,7 @@ setTimeout(showSlides, 8000); // Change image every 8 seconds
 
 
 
-let slideIndex = 1;
+slideIndex = 1;
 showSlides1(slideIndex);
 
 function plusSlides(n) {
