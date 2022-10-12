@@ -3,134 +3,289 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>GCU TechClub Projects</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/navbar-style.css">
-    <link rel="stylesheet" href="css/projects-style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>GCU TechClub Projects</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/projects-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+
 
 </head>
 
 <body class="body">
 
-    <nav class="navbar">
-        <a href="index.html"><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo"></a>
-        <a href="#" class="toggle-button" style="margin-top: 20px;">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="calendar.html">Calendar</a></li>
-                <li class="dropdown">
-                    <a href="committee.html">Committees</a>
+  <nav class="navbar">
+    <a href="index.html"><img src="images/Navbar-Logo.png" alt="Navbar Logo" id="navbar-logo"></a>
+    <a href="#" class="toggle-button" style="margin-top: 20px;">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li class="dropdown">
+          <a href="committee.html">Committees</a>
 
-                </li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="merch.html">Merch</a></li>
-                <li style="margin-right: 10px;"><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-
-
-
-
-    <!--My code will go here-->
-
-    <div id="rcorners1">
-        <div id="rcorners2">
-
-            <div class="slideshow-container">
-                <!--style="left: 80%;"-->
-
-                <div class="mySlides fade">
-                    <!--style="max-width: 100;"-->
-                    <div class="numbertext">1 / 3</div>
-                    <div id="outer">
-                        <div id="inner">
-                            <img src="images/luffy.jpg">
-                        </div>
-                    </div>
-
-                    <div class="text"></div>project#1
-                </div>
-
-                <div class="mySlides fade">
-                    <!--style="max-width: 100;"-->
-                    <div class="numbertext">2 / 3</div>
-                    <img src="images/luffy vs kaido.jpg">
-                    <div class="text"></div>project #2
-                </div>
-
-                <div class="mySlides fade">
-                    <!--style="max-width: 100;"-->
-                    <div class="numbertext">3 / 3</div>
-                    <img src="images/straw haats.jpg">
-                    <div class="text"></div>project#3
-                </div>
-
-            </div>
-            <br>
-
-            <div style="text-align:center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-
-            <script>
-                let slideIndex = 0;
-                showSlides();
-
-                function showSlides() {
-                    let i;
-                    let slides = document.getElementsByClassName("mySlides");
-                    let dots = document.getElementsByClassName("dot");
-                    for (const slide of slides) {
-                        slide.style.display = "none";
-                    }
-                    slideIndex++;
-                    if (slideIndex > slides.length) slideIndex = 1;
-                    for (const dot of dots) {
-                        dot.classList.remove('project-active');
-                    }
-                    slides[slideIndex - 1].style.display = "block";
-                    dots[slideIndex - 1].classList.add('project-active');
-                    setTimeout(showSlides, 8000); // Change image every 8 seconds
-                }
-            </script>
-
-
-        </div>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li style="margin-right: 10px;"><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
-    <br>
-    <br>
-    <div id="this1">
-        <div id="rcorners3">
-        </div>
+  </nav>
 
-        <div id="rcorners4">
-        </div>
-        <div id="rcorners5">
-        </div>
 
-        <div id="rcorners6">
-        </div>
-        <div id="rcorners7">
-        </div>
 
+  <section class="home">
+    <img src="images/technology light background.jpg" alt="">
+    <div class="thehead">
+
+
+      <img src="images/technology.png" class="pyramids" alt="">
+    </div>
+    <div class="thetech">
+      <img src="images/technology 2.png" class="palace" alt="">
     </div>
 
-    <script src="js/mobile-toggle.js" async defer></script>
-    <footer-ss></footer-ss>
-    <script type="module" src="js/footer.js"></script>
+
+
+
+    <div class="info" style="opacity: 1">
+      <h2 class="title">Projects</h2>
+      <p class="paragraph" style="z-index:10;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.</p>
+      <a href="https://www.youtube.com/watch?v=34Ig3X59_qA" class="btn" target="_blank">Learn More</a>
+    </div>
+  </section>
+  <section class="content">
+    <h2>projects goal and beliefs</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+
+
+  <!-- first and second section -->
+
+
+
+
+
+  <section class="sec-01">
+    <div class="one">
+      <div class="thecontainer">
+        <h2 class="main-title">Reveal Elements On Scroll</h2>
+        <div class="part">
+
+          <!-- ussop -->
+
+
+
+          <img src="images/ussop.jpg" alt="" style="max-width:70%;" >
+          <div class="text-box" style="color:white;">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a href="https://discord.gg/25Ydb3CXhx" class="icon" class="btn" target="_blank"><i
+              class="fab fa-discord"></i></a>
+          <a href="https://www.instagram.com/never_gonna_give_you_up_lyrics/" class="icon" class="btn"
+            target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/CoolestAccEver" class="icon" class="btn" target="_blank"><i
+              class="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com/watch?v=IdkCEioCp24" class="icon" class="btn" target="_blank"><i
+              class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+  </section>
+
+
+  <section class="sec-03">
+    <div class="thecontainer">
+      <h3 class="section-title" style="color: #ffff;">Lorem Ipsum </h3>
+      <div class="part">
+        <div class="picture">
+          <div>
+            <img src="images/tony tony chopper.jpg" alt="" style="width:220%;" float="right;">
+          </div>
+        </div>
+        <div class="information">
+          <h4 class="information-title">Description</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <section class="sec-03">
+    <div class="thecontainer">
+      <h3 class="section-title" style="color: #ffff">Lorem Ipsum</h3>
+      <div class="part">
+        <div class="media-information">
+          <li><a href="https://discord.gg/25Ydb3CXhx" class="btn" target="_blank"><i class="fab fa-discord"></i>
+              discord</a></li>
+          <li><a href="https://www.instagram.com/never_gonna_give_you_up_lyrics/" class="btn" target="_blank"><i
+                class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://twitter.com/CoolestAccEver" class="btn" target="_blank"><i class="fab fa-twitter"></i>
+              Twitter</a></li>
+          <li><a href="https://www.youtube.com/watch?v=IdkCEioCp24" class="btn" target="_blank"><i
+                class="fab fa-youtube"></i> Youtube</a></li>
+          <li><a href="https://www.linkedin.com/in/danson-batige-131296216/" class="btn" target="_blank"><i
+                class="fab fa-linkedin"></i> Linkedin</a></li>
+        </div>
+        <div class="image">
+          <img src="images/cyber_img.png" alt="" style="width:70%;">
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+  </section>
+
+  <!-- <script type="text/javascript" src=projects1.js> </script> -->
+  <!-- <script src="js/projects1.js"></script> -->
+  <!-- <script src="js/projects1.js" async defer></script> -->
 </body>
+
+
+
+<script type="text/javascript">
+  const pyramids = document.querySelector(".pyramids");
+  const palace = document.querySelector(".palace");
+  const logoo = document.querySelector(".logoo");
+  const nav = document.querySelector("nav");
+  const info = document.querySelector(".info");
+
+  //reveal elements on page loading
+  window.addEventListener("load", () => {
+    pyramids.style.transform = "translateX(0)";
+    palace.style.transform = "translateX(0)";
+    logoo.style.transform = "translateY(0)";
+    nav.style.transform = "translateY(0)";
+    info.style.transform = "translateY(0)";
+    info.style.opacity = "1";
+  });
+  //scrolling effects on website elements
+  window.addEventListener("scroll", () => {
+    const scrollVal = window.scrollY;
+
+    pyramids.style.left = scrollVal * -0.25 + "px";
+    palace.style.left = scrollVal * 0.25 + "px";
+    info.style.marginTop = scrollVal * 1.1 + "px";
+
+    pyramids.style.transition = "0s";
+    palace.style.transition = "0s";
+    info.style.transition = "0s";
+  });
+//do it on load
+
+  //hide and display home info on scrolldown and up
+  window.onscroll = function () {
+    
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      info.style.opacity = "1";
+      info.style.transition = "0.6s";
+    }
+    else {
+      info.style.opacity = "1";
+      info.style.transition = "0.6s";
+    }
+  }
+</script>
+
+
+
+
+
+
+
+
+<script>
+  //common reveal options to create reveal animations
+  ScrollReveal({
+    //reset: true,
+    distance: '60px',
+    duration: 2000,
+    delay: 200
+  });
+
+  //target elements, and specify options to create reveal animations
+  ScrollReveal().reveal('.main-title, .section-title', { delay: 0, origin: 'left' });
+  ScrollReveal().reveal('.sec-01 .image, .information', { delay: 10, origin: 'bottom' });
+  ScrollReveal().reveal('.text-box', { delay: 10, origin: 'right' });
+  ScrollReveal().reveal('.media-icons i', { delay: 10, origin: 'bottom', interval: 200 });
+  ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 10, origin: 'top' });
+  ScrollReveal().reveal('.media-information li', { delay: 10, origin: 'left', interval: 200 });
+</script>
+
+
+
+
 
 </html>
